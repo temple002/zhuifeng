@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ampere魔改版 · 追风源</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    background: #0e0f12;
+    color: #f2f3f5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .banner { width: 100%; display: block; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 48px; }
+  .title-row { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .icon { width: 68px; height: 68px; border-radius: 15px; box-shadow: 0 4px 14px rgba(0,0,0,.45); }
+  .title h1 { font-size: 22px; font-weight: 700; }
+  .title .meta { color: #9aa0a8; font-size: 13px; margin-top: 4px; }
+  .badge {
+    display: inline-block; background: #1d232c; color: #34c759;
+    border: 1px solid #2a333d; border-radius: 999px;
+    padding: 3px 12px; font-size: 12px; margin-top: 8px;
+  }
+  h2 { font-size: 17px; margin: 26px 0 12px; color: #fff; }
+  .desc { color: #cdd2d9; font-size: 15px; }
+  ul.features { list-style: none; margin-top: 10px; }
+  ul.features li {
+    background: #161a20; border: 1px solid #242b34; border-radius: 12px;
+    padding: 12px 14px; margin-bottom: 8px; font-size: 14px; color: #d6dbe2;
+  }
+  ul.features li b { color: #34c759; }
+  .note {
+    margin-top: 20px; padding: 12px 14px; border-radius: 12px;
+    background: #241b16; border: 1px solid #3a2a1d; color: #e8b98a; font-size: 13px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px; }
+  .grid figure { background: #161a20; border: 1px solid #242b34; border-radius: 12px; overflow: hidden; }
+  .grid img { width: 100%; display: block; background: #000; }
+  .grid figcaption { font-size: 12px; color: #9aa0a8; text-align: center; padding: 6px 4px; }
+  .info { background: #161a20; border: 1px solid #242b34; border-radius: 12px; overflow: hidden; }
+  .info .row { display: flex; justify-content: space-between; padding: 11px 14px; font-size: 14px; }
+  .info .row + .row { border-top: 1px solid #242b34; }
+  .info .k { color: #9aa0a8; }
+  .info .v { color: #e8eaed; }
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; color: #6b7280; }
+  .btn {
+    display: block; text-align: center; margin-top: 22px;
+    background: #34c759; color: #0e0f12; font-weight: 600; font-size: 15px;
+    border-radius: 12px; padding: 13px; text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <img class="banner" src="https://temple002.github.io/zhuifeng/depictions/banner.png" alt="Ampere">
+  <div class="wrap">
+    <div class="title-row">
+      <img class="icon" src="https://temple002.github.io/zhuifeng/depictions/icon.png" alt="Ampere 图标">
+      <div class="title">
+        <h1>Ampere魔改版</h1>
+        <div class="meta">iOS 16 风格电池指示器 · v1.5</div>
+        <span class="badge">追风源 · RootHide / rootless</span>
+      </div>
+    </div>
+
+    <h2>介绍</h2>
+    <p class="desc">优雅的 iOS 16 风格状态栏电量百分比插件<br>
+    完美还原 iOS 16 原生动态电池指示器，支持深浅色模式与个性化微调。</p>
+
+    <h2>魔改版特性</h2>
+    <ul class="features">
+      <li><b>精细调校</b>电池圆角弧度与电量数字间距，视觉更接近 <b>iOS 16.1</b> 的效果</li>
+    </ul>
+
+    <div class="note">如果觉得不好用请卸载</div>
+
+    <h2>效果展示</h2>
+    <div class="grid">
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-01.jpg" alt="深色 100%"><figcaption>深色模式 · 100%</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-02.jpg" alt="深色纹理 100%"><figcaption>深色纹理 · 100%</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-03.jpg" alt="深色 100"><figcaption>深色 · 100</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-04.jpg" alt="浅色 100%"><figcaption>浅色模式 · 100%</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-05.jpg" alt="深色 94%"><figcaption>深色 · 94%</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-06.jpg" alt="浅色 94%"><figcaption>浅色 · 94%</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-07.jpg" alt="深色 67%"><figcaption>深色 · 67%</figcaption></figure>
+      <figure><img src="https://temple002.github.io/zhuifeng/depictions/screens/screen-08.jpg" alt="浅色 67%"><figcaption>浅色 · 67%</figcaption></figure>
+    </div>
+
+    <h2>兼容信息</h2>
+    <div class="info">
+      <div class="row"><span class="k">作者</span><span class="v">MTAC / 追风</span></div>
+      <div class="row"><span class="k">版本</span><span class="v">1.5</span></div>
+      <div class="row"><span class="k">兼容</span><span class="v">iOS 15.0+ · RootHide / rootless</span></div>
+      <div class="row"><span class="k">依赖</span><span class="v">mobilesubstrate · preferenceloader</span></div>
+    </div>
+
+    <a class="btn" href="https://temple002.github.io/zhuifeng/">追风源主页</a>
+    <div class="footer">Ampere魔改版 · 追风源 · 2026</div>
+  </div>
+</body>
+</html>
