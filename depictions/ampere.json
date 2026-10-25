@@ -1,7 +1,6 @@
 {
   "class": "DepictionTabView",
-  "minVersion": "0.1",
-  "headerImage": "https://temple002.github.io/zhuifeng/depictions/banner.png",
+  "minVersion": "0.4",
   "tintColor": "#34C759",
   "tabs": [
     {
@@ -16,6 +15,10 @@
         {
           "class": "DepictionScreenshotsView",
           "itemCornerRadius": 8,
+          "itemSize": {
+            "x": 350,
+            "y": 181
+          },
           "screenshots": [
             {
               "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-01.jpg",
@@ -73,12 +76,6 @@
           "class": "DepictionTableTextView",
           "title": "依赖",
           "text": "mobilesubstrate · preferenceloader"
-        },
-        {
-          "class": "DepictionTableButtonView",
-          "title": "追风源主页",
-          "action": "https://temple002.github.io/zhuifeng/",
-          "openExternal": true
         }
       ]
     }
