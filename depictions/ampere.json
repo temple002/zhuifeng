@@ -21,12 +21,20 @@
           "alignment": 1
         },
         {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
           "class": "DepictionImageView",
           "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-02.jpg",
           "width": 355,
           "height": 184,
           "cornerRadius": 12,
           "alignment": 1
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
         },
         {
           "class": "DepictionImageView",
@@ -37,12 +45,20 @@
           "alignment": 1
         },
         {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
           "class": "DepictionImageView",
           "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-04.jpg",
           "width": 355,
           "height": 184,
           "cornerRadius": 12,
           "alignment": 1
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
         },
         {
           "class": "DepictionImageView",
@@ -53,6 +69,10 @@
           "alignment": 1
         },
         {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
           "class": "DepictionImageView",
           "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-06.jpg",
           "width": 355,
@@ -61,12 +81,20 @@
           "alignment": 1
         },
         {
+          "class": "DepictionSpacerView",
+          "spacing": 12
+        },
+        {
           "class": "DepictionImageView",
           "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-07.jpg",
           "width": 355,
           "height": 184,
           "cornerRadius": 12,
           "alignment": 1
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 12
         },
         {
           "class": "DepictionImageView",
