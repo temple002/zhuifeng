@@ -22,16 +22,14 @@ https://temple002.github.io/zhuifeng/
 ## 维护方法（新增插件）
 
 1. 把新的 `.deb` 文件放进 `debs/` 目录
-2. 运行索引构建脚本：
-   ```bash
-   python3 build_repo.py
-   ```
-3. 提交并推送，Pages 自动更新：
+2. 提交并推送，**GitHub Actions 会自动重建索引并部署 Pages**：
    ```bash
    git add -A
    git commit -m "add: 新插件"
    git push
    ```
+
+（可选）想在本地预览索引：`python3 build_repo.py`
 
 ## 目录结构
 
