@@ -15,10 +15,7 @@
         {
           "class": "DepictionScreenshotsView",
           "itemCornerRadius": 8,
-          "itemSize": {
-            "x": 350,
-            "y": 181
-          },
+          "itemSize": "{350, 181}",
           "screenshots": [
             {
               "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-01.jpg",
