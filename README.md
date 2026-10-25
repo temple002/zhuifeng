@@ -37,6 +37,7 @@ https://temple002.github.io/zhuifeng/
 ```
 zhuifeng-repo/
 ├── build_repo.py        # 索引构建脚本（扫描 debs/ 生成 Packages/Release）
+├── CydiaIcon.png        # 源图标（Sileo/Zebra 添加源时显示）
 ├── debs/                # 存放 .deb 插件包
 ├── Packages             # 包索引（Sileo/Zebra 读取）
 ├── Packages.gz          # 压缩索引
