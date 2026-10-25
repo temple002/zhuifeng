@@ -13,43 +13,68 @@
           "useSpacing": true
         },
         {
-          "class": "DepictionScreenshotsView",
-          "itemCornerRadius": 8,
-          "itemSize": "{350, 181}",
-          "screenshots": [
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-01.jpg",
-              "accessibilityText": "深色模式 · 100%"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-02.jpg",
-              "accessibilityText": "深色纹理 · 100%"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-03.jpg",
-              "accessibilityText": "深色 · 100"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-04.jpg",
-              "accessibilityText": "浅色模式 · 100%"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-05.jpg",
-              "accessibilityText": "深色 · 94%"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-06.jpg",
-              "accessibilityText": "浅色 · 94%"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-07.jpg",
-              "accessibilityText": "深色 · 67%"
-            },
-            {
-              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-08.jpg",
-              "accessibilityText": "浅色 · 67%"
-            }
-          ]
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-01.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-02.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-03.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-04.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-05.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-06.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-07.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/screen-08.jpg",
+          "width": 355,
+          "height": 184,
+          "cornerRadius": 12,
+          "alignment": 1
         },
         {
           "class": "DepictionSeparatorView"
