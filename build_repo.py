@@ -6,7 +6,7 @@
 功能: 扫描 debs/ 目录下的所有 .deb，生成 Packages / Packages.gz / Packages.bz2 / Release
       新增插件时，把 .deb 放进 debs/ 后重新运行本脚本即可。
 """
-import os, subprocess, hashlib, gzip, bz2, tempfile, tarfile, email.utils
+import os, subprocess, hashlib, gzip, bz2, tempfile, tarfile, email.utils, re
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 DEBS_DIR = os.path.join(REPO, "debs")
@@ -48,9 +48,13 @@ def main():
         return 1
 
     entries = []
+    archs = set()
     for fn in debs:
         path = os.path.join(DEBS_DIR, fn)
         control = extract_control(path).rstrip("\n")
+        m = re.search(r"^Architecture:\s*(\S+)", control, re.M)
+        if m:
+            archs.add(m.group(1))
         size = os.path.getsize(path)
         entry = (
             f"{control}\n"
@@ -88,7 +92,7 @@ def main():
         "Suite: stable\n"
         "Version: 1.0\n"
         "Codename: zhuifeng\n"
-        "Architectures: iphoneos-arm64e\n"
+        f"Architectures: {' '.join(sorted(archs))}\n"
         "Components: main\n"
         "Description: 追风 iOS 越狱源 (RootHide)\n"
         f"Date: {date}\n"

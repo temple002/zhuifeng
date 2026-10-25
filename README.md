@@ -14,9 +14,10 @@ https://temple002.github.io/zhuifeng/
 
 ## 已收录插件
 
-| 包名 | 名称 | 版本 | 说明 |
-| --- | --- | --- | --- |
-| com.mtac.ampere | Ampere | 1.5 | iOS 16 Style Battery Indicator |
+| 包名 | 名称 | 版本 | 架构 | 说明 |
+| --- | --- | --- | --- | --- |
+| com.mtac.ampere | Ampere魔改版 | 1.5 | iphoneos-arm64（rootless） | iOS 16 Style Battery Indicator |
+| com.mtac.ampere | Ampere魔改版-RootHide | 1.5 | iphoneos-arm64e（RootHide） | iOS 16 Style Battery Indicator |
 
 ## 维护方法（新增插件）
 
@@ -47,5 +48,5 @@ zhuifeng-repo/
 
 ## 说明
 
-- 支持架构：`iphoneos-arm64e`（RootHide / rootless 系）
+- 支持架构：`iphoneos-arm64`（rootless 越狱，如 Dopamine）、`iphoneos-arm64e`（RootHide），Sileo 会根据设备自动分发对应架构
 - 未启用 GPG 签名；如需要可后续补充
