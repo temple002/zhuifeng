@@ -5,14 +5,16 @@ Maintainer: MTAC
 Author: MTAC
 Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 15.0), preferenceloader
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/ampere.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/ampere.html
 Architecture: iphoneos-arm64
 Version: 1.5
 Installed-Size: 640
 Filename: debs/com.mtac.ampere_1.5_iphoneos-arm64.deb
-Size: 104508
-MD5sum: f071bf9a811d6216ed9beab421a5451d
-SHA1: af2d75910eefbbbefef9f5269eb4bfc13e096ee8
-SHA256: 2dfbaf970c3be36e926b65cc90388dfb3d3aa06562a04628a1a82b85061b8b9d
+Size: 104892
+MD5sum: fcb34a5a895772293cf9e97213d36446
+SHA1: 5c01e79fb098586c579b5265e73f670e7fc066cb
+SHA256: 6126d8ffd4a679ade841ef793e91298943595466b5473100627ab4b44282a8b4
 
 Package: com.mtac.ampere
 Name: Ampere魔改版-RootHide
@@ -21,11 +23,13 @@ Maintainer: MTAC
 Author: MTAC
 Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 15.0), preferenceloader
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/ampere.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/ampere.html
 Architecture: iphoneos-arm64e
 Version: 1.5
 Installed-Size: 640
 Filename: debs/com.mtac.ampere_1.5_iphoneos-arm64e.deb
-Size: 104592
-MD5sum: 5a186ca909939a20fca76a7fabffb674
-SHA1: 65047ac490fe09b3ed235516598e92eb8e09fcf2
-SHA256: 5b7b1857fe6bbff947c31ee6b42b2d80d6728f0ec3ef07f2c7d6fb70f12ee5a4
+Size: 104620
+MD5sum: 1fe5c84626360c5f9229380cfa8803e0
+SHA1: 90b4c0020f1340799822858a0712f51bb40d3c4c
+SHA256: ee32b54a86a9ae31ae215a2b8a0da99ebd96b271a08d3f8348abd9fbe05754ba
