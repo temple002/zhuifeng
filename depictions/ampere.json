@@ -22,7 +22,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
@@ -34,7 +34,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
@@ -46,7 +46,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
@@ -58,7 +58,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
@@ -70,7 +70,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
@@ -82,7 +82,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
@@ -94,7 +94,7 @@
         },
         {
           "class": "DepictionSpacerView",
-          "spacing": 12
+          "spacing": 24
         },
         {
           "class": "DepictionImageView",
