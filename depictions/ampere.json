@@ -1,0 +1,86 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.1",
+  "headerImage": "https://temple002.github.io/zhuifeng/depictions/banner.png",
+  "tintColor": "#34C759",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "详情",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# Ampere魔改版\n\n优雅的 iOS 16 风格状态栏电量百分比插件\n\n完美还原 iOS 16 原生动态电池指示器，支持深浅色模式与个性化微调。\n\n**魔改版特性**\n\n- 精细调校电池圆角弧度与电量数字间距，视觉更接近 iOS 16.1 的效果\n\n> 如果觉得不好用请卸载",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "screenshots": [
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-01.jpg",
+              "accessibilityText": "深色模式 · 100%"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-02.jpg",
+              "accessibilityText": "深色纹理 · 100%"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-03.jpg",
+              "accessibilityText": "深色 · 100"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-04.jpg",
+              "accessibilityText": "浅色模式 · 100%"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-05.jpg",
+              "accessibilityText": "深色 · 94%"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-06.jpg",
+              "accessibilityText": "浅色 · 94%"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-07.jpg",
+              "accessibilityText": "深色 · 67%"
+            },
+            {
+              "url": "https://temple002.github.io/zhuifeng/depictions/screens/screen-08.jpg",
+              "accessibilityText": "浅色 · 67%"
+            }
+          ]
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "MTAC / 追风"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "版本",
+          "text": "1.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "兼容",
+          "text": "iOS 15.0+ · RootHide / rootless"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "依赖",
+          "text": "mobilesubstrate · preferenceloader"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "追风源主页",
+          "action": "https://temple002.github.io/zhuifeng/",
+          "openExternal": true
+        }
+      ]
+    }
+  ]
+}
