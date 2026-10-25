@@ -1,0 +1,21 @@
+Origin: 追风
+Label: 追风
+Suite: stable
+Version: 1.0
+Codename: zhuifeng
+Architectures: iphoneos-arm64e
+Components: main
+Description: 追风 iOS 越狱源 (RootHide)
+Date: Sun, 25 Oct 2026 13:14:55 +0800
+MD5Sum:
+ a7dfd718a2f465ecddcfb1568e2c5d33 483 Packages
+ ee01bbfbcd3dd4328cb83d461fbc722c 371 Packages.gz
+ e01161bb836630d1f5e331ba18482757 405 Packages.bz2
+SHA1:
+ 3aff7e29c45778b10fcf8459c29f70c1dc097e7b 483 Packages
+ 6b940f0d957670bf078bac1f848cb97527b1a58d 371 Packages.gz
+ 517fd5e60c8c75936eb970ea6b8a7d5f65686bb5 405 Packages.bz2
+SHA256:
+ be9dcab52b0dc539be896644dd491d1a21f9a65786cb0f6adaa7d7dc276f2358 483 Packages
+ 61e5f9cb467d940fe2075a3dd4813e1976245c9bd367dcc48396a5758b9cc7da 371 Packages.gz
+ b750f2dd3a4fcce801dd2ee7d3d59927269111ad8fda507988f735e9621a9be7 405 Packages.bz2

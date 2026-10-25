@@ -1,0 +1,15 @@
+Package: com.mtac.ampere
+Name: Ampere
+Description: iOS 16 Style Battery Indicator
+Maintainer: MTAC
+Author: MTAC
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 15.0), preferenceloader
+Architecture: iphoneos-arm64e
+Version: 1.5
+Installed-Size: 640
+Filename: debs/com.mtac.ampere_1.5_iphoneos-arm64e.deb
+Size: 104456
+MD5sum: 23838b2594f3d21248f5ff5905ec2db3
+SHA1: 1dc5e7d5c5d41fa1c9eff459772ec427538afce7
+SHA256: 0b9a79bebe73ed1ed4319b7d3ea03bc974f41fd5704d0221d874aebdc2689c79
