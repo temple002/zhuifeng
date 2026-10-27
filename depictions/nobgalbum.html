@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoBgAlbumAccess · 追风源</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; background: #0e1116; color: #e6e8eb; line-height: 1.7; padding: 20px 16px 60px; }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 18px 0 10px; }
+  h3 { font-size: 19px; margin: 24px 0 10px; color: #fff; }
+  p { margin: 10px 0; color: #c8cdd4; }
+  blockquote { background: #161a20; border-left: 3px solid #34C759; border-radius: 8px; padding: 12px 16px; margin: 14px 0; color: #c8cdd4; }
+  ul { margin: 10px 0 10px 22px; color: #c8cdd4; }
+  li { margin: 6px 0; }
+  code { background: #1f2530; padding: 2px 6px; border-radius: 5px; font-size: 13px; color: #7ee787; }
+  .shots { display: flex; flex-direction: column; align-items: center; gap: 24px; margin: 20px 0; }
+  .shots img { width: 100%; max-width: 360px; border-radius: 16px; border: 1px solid #242b34; display: block; }
+  .info { background: #161a20; border: 1px solid #242b34; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+  .row { display: flex; justify-content: space-between; padding: 13px 16px; border-bottom: 1px solid #242b34; font-size: 15px; }
+  .row:last-child { border-bottom: none; }
+  .row .k { color: #8b919a; }
+  .row .v { color: #e6e8eb; }
+  .footer { text-align: center; color: #5b616b; font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>NoBgAlbumAccess（禁止后台读取相册）</h1>
+  <blockquote>彻底终结流氓 App 偷偷在后台扫描您私人相册的行为！保护隐私，前台畅快用，后台休想看。</blockquote>
+
+  <h3>为什么需要它？</h3>
+  <p>许多主流应用在获得相册权限后，经常会在您<b>锁屏、切后台或开启静音保活</b>时，偷偷在后台遍历读取您的最新照片、截图甚至私密图片，不仅严重侵犯个人隐私，还偷偷浪费手机电量与流量。</p>
+  <p><b>NoBgAlbumAccess</b> 让您自主选择哪些应用禁止在后台访问相册，给隐私加上一把坚固的暗锁。</p>
+
+  <h3>核心功能与亮点</h3>
+  <ul>
+    <li>🔒 <b>前后台智能分权</b>：前台使用不受影响（发朋友圈、发图片、保存照片完全正常）；切入后台立刻切断，伪装为空相册与拒绝访问。</li>
+    <li>📊 <b>精美可视化的拦截总表与细表</b>：按天聚合总表，同一应用多次访问智能合并；点击下钻明细，每次拦截精确到秒，配原生应用高清图标；一键清空记录。</li>
+    <li>🔋 <b>极其轻量，勾选越多反而越省电</b>：杜绝后台遍历相册、大图解码的高功耗行为；未勾选的 App 启动即跳过，前台纳秒级直通，10 秒防抖节流。</li>
+    <li>🌐 <b>突破 iOS 15~17 严格沙盒</b>：基于 SpringBoard 统管 + 系统底层 notifyd 广播下发，配置即时生效，绝不闪退。</li>
+  </ul>
+
+  <h3>兼容性信息</h3>
+  <ul>
+    <li>支持系统：iOS 15.0 ~ iOS 17.0</li>
+    <li>越狱环境：Rootless（Dopamine 等）与 RootHide</li>
+    <li>依赖组件：<code>com.opa334.altlist</code>、<code>preferenceloader</code></li>
+  </ul>
+
+  <div class="shots">
+    <img src="https://temple002.github.io/zhuifeng/depictions/screens/nba-01.png" alt="设置页">
+    <img src="https://temple002.github.io/zhuifeng/depictions/screens/nba-02.png" alt="拦截记录">
+  </div>
+
+  <div class="info">
+    <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.0.0</span></div>
+    <div class="row"><span class="k">兼容</span><span class="v">iOS 15.0 ~ 17.0 · Rootless / RootHide</span></div>
+    <div class="row"><span class="k">依赖</span><span class="v">preferenceloader · com.opa334.altlist</span></div>
+  </div>
+
+  <div class="footer">NoBgAlbumAccess 1.0.0 · 追风源 · 2026</div>
+</div>
+</body>
+</html>

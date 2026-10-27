@@ -1,0 +1,65 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#34C759",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "详情",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# NoBgAlbumAccess（禁止后台读取相册）\n\n> 彻底终结流氓 App 偷偷在后台扫描您私人相册的行为！保护隐私，前台畅快用，后台休想看。\n\n### 为什么需要它？\n\n许多主流应用在获得相册权限后，经常会在您**锁屏、切后台或开启静音保活**时，偷偷在后台遍历读取您的最新照片、截图甚至私密图片，不仅严重侵犯个人隐私，还偷偷浪费手机电量与流量。\n\n**NoBgAlbumAccess** 让您自主选择哪些应用禁止在后台访问相册，给隐私加上一把坚固的暗锁。\n\n### 核心功能与亮点\n\n- 🔒 **前后台智能分权**\n  - 前台使用不受影响：发朋友圈、发图片、保存照片完全正常\n  - 切入后台立刻切断：相册数据瞬间隐身，伪装为空相册与拒绝访问\n- 📊 **精美可视化的拦截总表与细表**\n  - 按天聚合总表，同一应用多次访问智能合并为一条\n  - 点击下钻明细：每次拦截精确到秒，配原生应用高清图标\n  - 一键清空记录，随时重置拦截历史\n- 🔋 **极其轻量，勾选越多反而越省电**\n  - 杜绝后台偷跑：切断应用在后台遍历相册、大图解码的高功耗行为\n  - 插件本身零开销：未勾选的 App 启动即跳过，前台纳秒级直通\n- 🌐 **突破 iOS 15~17 严格沙盒**\n  - 基于 SpringBoard 统管 + 系统底层 notifyd 广播下发，配置即时生效，绝不闪退\n\n### 兼容性信息\n\n- 支持系统：iOS 15.0 ~ iOS 17.0\n- 越狱环境：Rootless（Dopamine 等）与 RootHide\n- 依赖组件：`com.opa334.altlist`、`preferenceloader`",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/nba-01.png",
+          "width": 355,
+          "height": 768,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 24
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/screens/nba-02.png",
+          "width": 355,
+          "height": 768,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "zhuifeng / 追风"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "版本",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "兼容",
+          "text": "iOS 15.0 ~ 17.0 · Rootless / RootHide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "依赖",
+          "text": "preferenceloader · com.opa334.altlist"
+        }
+      ]
+    }
+  ]
+}
