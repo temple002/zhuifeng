@@ -49,3 +49,39 @@ Size: 36436
 MD5sum: c21f77e44ca5f5ee513130b794d00ea7
 SHA1: f490fc0c5b9fb1a8fce6312f963d673c9a736e88
 SHA256: a364ed1a7f0f4bd5cd8aba237404367e2705408f0aa8e5a3b6bd003b1e90ae41
+
+Package: com.zhuifeng.nobgalbumaccess
+Name: NoBgAlbumAccess
+Description: 禁止指定 App 在后台读取相册
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.0), mobilesubstrate | ellekit, preferenceloader, com.opa334.altlist
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.html
+Architecture: iphoneos-arm64
+Version: 1.0.0
+Installed-Size: 424
+Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.0_iphoneos-arm64.deb
+Size: 49076
+MD5sum: f5191d2fcc8c115f7e1c91c7cd3e2f40
+SHA1: f37f07808de9ce5d201f602645549c10e70f38cd
+SHA256: d951b911700a376229d829e7cc56dde3d25ec2f16063e75d2454aff7ed3a949e
+
+Package: com.zhuifeng.nobgalbumaccess
+Name: NoBgAlbumAccess
+Description: 禁止指定 App 在后台读取相册
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.0), mobilesubstrate | ellekit, preferenceloader, com.opa334.altlist
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.html
+Architecture: iphoneos-arm64e
+Version: 1.0.0
+Installed-Size: 424
+Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.0_iphoneos-arm64e.deb
+Size: 49020
+MD5sum: d660ade63ddd2ed1eff0c143ec45b6fd
+SHA1: 5f07b8a22bc702a2bf7dffd3c31748419ebdef4a
+SHA256: c4239859656cece1d36733e7084221992b0b578dcfae3375f35e47fc8248ef11
