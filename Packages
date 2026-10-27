@@ -51,7 +51,7 @@ SHA1: f490fc0c5b9fb1a8fce6312f963d673c9a736e88
 SHA256: a364ed1a7f0f4bd5cd8aba237404367e2705408f0aa8e5a3b6bd003b1e90ae41
 
 Package: com.zhuifeng.nobgalbumaccess
-Name: NoBgAlbumAccess
+Name: 禁止后台读取相册-RootHide
 Description: 禁止指定 App 在后台读取相册
 Maintainer: zhuifeng
 Author: zhuifeng
@@ -64,13 +64,13 @@ Architecture: iphoneos-arm64
 Version: 1.0.0
 Installed-Size: 424
 Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.0_iphoneos-arm64.deb
-Size: 49156
-MD5sum: b7bf54befc7d2ff080dd932f11637847
-SHA1: 4341a7f7591a95fb9131c57b62fe86024625305b
-SHA256: eabe8e5fe92d2a6dd6fc2c8e9e21d5985a8b9ccef655c6005eb1f41112a1be8b
+Size: 48896
+MD5sum: ea582d1e180a39d99d7cd87019cf8aea
+SHA1: 4679a5f1a22fd9b1254cc1867a6d45c823f0b291
+SHA256: debfa3315218914a16c122b7085b6124a56e8eea7dfab82ca605855df978d5b2
 
 Package: com.zhuifeng.nobgalbumaccess
-Name: NoBgAlbumAccess
+Name: 禁止后台读取相册-RootHide
 Description: 禁止指定 App 在后台读取相册
 Maintainer: zhuifeng
 Author: zhuifeng
@@ -83,7 +83,7 @@ Architecture: iphoneos-arm64e
 Version: 1.0.0
 Installed-Size: 424
 Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.0_iphoneos-arm64e.deb
-Size: 48712
-MD5sum: 4f955f93b7f65447d9924c3c251f9d6e
-SHA1: f6d8e08361560753fbb397666d6596a96dfa3950
-SHA256: 4f6a5c48ebdd8d30d58a63c5daae355e4b3fae4927bae29044b732557165432c
+Size: 49024
+MD5sum: 3dbe8942911d13b00f279b4de9dbbff2
+SHA1: f8c2be340798d4c97984873bce2182df4b37eb9a
+SHA256: 98c1364e2eb1ee1436abb001a7ac9f06a2c146bfad26b108d5ae1f679f81fbcd
