@@ -33,3 +33,19 @@ Size: 104620
 MD5sum: 1fe5c84626360c5f9229380cfa8803e0
 SHA1: 90b4c0020f1340799822858a0712f51bb40d3c4c
 SHA256: ee32b54a86a9ae31ae215a2b8a0da99ebd96b271a08d3f8348abd9fbe05754ba
+
+Package: com.newwares.badgesync
+Name: BadgeSync-RootHide
+Description: Syncs icon badge values when notifications are dismissed from the notification centre.
+Maintainer: newwares
+Author: newwares
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), ws.hbang.common, preferenceloader, com.opa334.altlist
+Architecture: iphoneos-arm64e
+Version: 1.2.2
+Installed-Size: 384
+Filename: debs/com.newwares.badgesync_1.2.2_iphoneos-arm64e.deb
+Size: 36436
+MD5sum: c21f77e44ca5f5ee513130b794d00ea7
+SHA1: f490fc0c5b9fb1a8fce6312f963d673c9a736e88
+SHA256: a364ed1a7f0f4bd5cd8aba237404367e2705408f0aa8e5a3b6bd003b1e90ae41
