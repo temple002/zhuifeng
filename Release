@@ -6,16 +6,16 @@ Codename: zhuifeng
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 追风 iOS 越狱源 (RootHide)
-Date: Wed, 28 Oct 2026 15:13:57 +0800
+Date: Fri, 30 Oct 2026 14:54:25 +0800
 MD5Sum:
- f5da91df0bbe38830898a3d513ed1646 3690 Packages
- a4b7c23f076dc7bfa68898c711ff839a 1204 Packages.gz
- 64cbb8459337207ca3b3d0120744ecaa 1441 Packages.bz2
+ 3c72fcf9669bdb28f620faaa1291fcb9 6327 Packages
+ 768b239c22bea4a9dc2f9e48ab8a95b9 2049 Packages.gz
+ 5d53c55a514789f25984cfcc5456e21b 2275 Packages.bz2
 SHA1:
- 0f115a5a3978c08620ffbd556db6da2acc8c06d8 3690 Packages
- ddf0b60dae932d425eac10a2e541203773e714e1 1204 Packages.gz
- 915673ed62f5eb6f77b3130a79e65a8392259ec2 1441 Packages.bz2
+ 97c4ba50aac3c4956ccb3b3ef0f62c1d102e4a19 6327 Packages
+ b9fc8d35cd93c89bb2ffda7d0c7d558ba263d208 2049 Packages.gz
+ fb8847eb12191150a874df68f9be9bace758b5f9 2275 Packages.bz2
 SHA256:
- f6136934f68c4aca7bd188bfbd7a4ce380c14eb8a681cc5f852513d55b5c3628 3690 Packages
- 4aee59ea48b6b24a619ebe7b59f57476e740e1a52b37fb446cac1561a1107a23 1204 Packages.gz
- 6e44dcfcca4b9b90a2c58395c64ed602abbcca87843d9db43cd21fbcef963f30 1441 Packages.bz2
+ 217969ab8d619ac78b4dd232c940f09b6d289efbe3b9eccfb22da076a30085a9 6327 Packages
+ 9ffa9fdbc2efa50fbda002ccfe69f553dafbf1786cf31889c098be14d0ff2c31 2049 Packages.gz
+ 1ba685577669291d62d6dbe1705cee3b9fd1198de272ee7bd2835ea61747c514 2275 Packages.bz2

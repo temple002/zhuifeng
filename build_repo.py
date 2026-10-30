@@ -12,12 +12,48 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 DEBS_DIR = os.path.join(REPO, "debs")
 
 
+DPKG_DEB_CANDIDATES = (
+    "dpkg-deb",
+    "/opt/procursus/bin/dpkg-deb",
+    "/usr/bin/dpkg-deb",
+)
+
+
+def _dpkg_deb_path():
+    for exe in DPKG_DEB_CANDIDATES:
+        p = subprocess.run(["which", exe], capture_output=True, text=True)
+        if p.returncode == 0 and p.stdout.strip():
+            return p.stdout.strip()
+        if os.path.isfile(exe) and os.access(exe, os.X_OK):
+            return exe
+    return None
+
+
+def _control_from_dpkg(deb_path):
+    """用 dpkg-deb -I 读取 control，兼容 xz/gz/bz2/zst 各种压缩格式。"""
+    exe = _dpkg_deb_path()
+    if not exe:
+        return None
+    r = subprocess.run([exe, "-I", deb_path], capture_output=True, text=True)
+    if r.returncode != 0:
+        return None
+    lines = r.stdout.splitlines()
+    start = next((i for i, ln in enumerate(lines) if ln.strip().startswith("Package:")), None)
+    if start is None:
+        return None
+    body = "\n".join(ln.lstrip() for ln in lines[start:]).strip("\n")
+    return body if body else None
+
+
 def extract_control(deb_path):
-    """从 deb 中提取 control 文件内容（无需 dpkg，用系统 ar+tar）"""
+    """从 deb 中提取 control 原文；优先 dpkg-deb，回退系统 ar+tar。"""
+    dpkg_control = _control_from_dpkg(deb_path)
+    if dpkg_control is not None:
+        return dpkg_control
     with tempfile.TemporaryDirectory() as td:
         subprocess.run(["ar", "-x", deb_path], cwd=td, check=True, capture_output=True)
         ctar = None
-        for name in ("control.tar.xz", "control.tar.gz", "control.tar.bz2", "control.tar"):
+        for name in ("control.tar.xz", "control.tar.gz", "control.tar.bz2", "control.tar.zst", "control.tar"):
             p = os.path.join(td, name)
             if os.path.exists(p):
                 ctar = p

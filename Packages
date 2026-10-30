@@ -52,6 +52,75 @@ MD5sum: c21f77e44ca5f5ee513130b794d00ea7
 SHA1: f490fc0c5b9fb1a8fce6312f963d673c9a736e88
 SHA256: a364ed1a7f0f4bd5cd8aba237404367e2705408f0aa8e5a3b6bd003b1e90ae41
 
+Package: com.spark.snowboard.dock
+Name: SnowBoard Dock栏拓展-Roothide
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Description: SnowBoard主题平台的Dock栏拓展模块。
+Maintainer: Spark
+Author: Spark
+Section: 美化插件
+Architecture: iphoneos-arm64e
+Version: 1.1.3~Beta4-rootless
+Installed-Size: 440
+Pre-Depends: rootless-compat(>= 0.9)
+Filename: debs/com.spark.snowboard.dock_1.1.3~Beta4-rootless_iphoneos-arm64e.deb
+Size: 34028
+MD5sum: df168d7457b2d355d52b4e5f93a54e88
+SHA1: 1232bd13f8d70efa617ec3db4551beadb8158e1a
+SHA256: a0dca7ce295acf66207f505e7582abdcea170023b654d280c48cae224c1e4dab
+
+Package: com.spark.snowboard.effects
+Name: SnowBoard图标效果拓展-Roothide
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Description: SnowBoard主题平台的图标效果拓展模块。
+Maintainer: Spark
+Author: Spark
+Section: 美化插件
+Architecture: iphoneos-arm64e
+Version: 1.2.2-Beta2-rootless
+Installed-Size: 412
+Pre-Depends: rootless-compat(>= 0.9)
+Filename: debs/com.spark.snowboard.effects_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
+Size: 34700
+MD5sum: 4ab2a5d28e45a27dc0c37ad506946270
+SHA1: 659998c0cfb808df9b07f5bb2c692d8d237d3462
+SHA256: 08cb85a87f4f69beed578a104955a82eb3beaa9b322bdf6d86534a6f31b1556c
+
+Package: com.spark.snowboard.masks
+Name: SnowBoard Icon Masks Extension
+Depends: mobilesubstrate, com.spark.snowboard (>= 1.2.100)
+Description: Icon masks for SnowBoard
+Maintainer: Spark
+Author: Spark
+Section: SnowBoard Extensions
+Architecture: iphoneos-arm64e
+Version: 1.2.2-Beta2-rootless
+Installed-Size: 340
+Pre-Depends: rootless-compat(>= 0.9)
+Filename: debs/com.spark.snowboard.masks_1.2.2-Beta2-rootless_iphoneos-arm64e.deb
+Size: 25492
+MD5sum: aec4aeaab28060b5d6d05fe4dd87b4de
+SHA1: 465136b12a15fccb788fdac3ca4166ffd95a01b0
+SHA256: 12f9752d0b66b19f95f8eca4d9060048cf9e6c81a458041254647a9f74be1c7b
+
+Package: com.spark.snowboard
+Architecture: iphoneos-arm64e
+Name: SnowBoard
+Version: 1.5.37-beta4-rootless
+Description: Snowboarding Theme Integrated Edition includes expansion pluginschi
+Author: Spark & Dennis D. Bednarz <xuanhua880@gmail.com>
+Section: Tweaks
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark <xuanhua880@gmail.com>
+Filename: debs/com.spark.snowboard_1.5.37-beta4-rootless-core_iphoneos-arm64e.deb
+Size: 1129740
+MD5sum: 1df0d36c7ac6ee3e616ecbeb6e152ba2
+SHA1: 24300cf7b0d01118e332e43c84b3fac9e1bf602d
+SHA256: 74b50ed7666e3a2e1537d6631fa0e9e6fd08dc9232d904ef8ded2fd89bbe3d42
+
 Package: com.zhuifeng.nobgalbumaccess
 Name: 禁止后台读取相册-RootHide
 Description: 禁止指定 App 在后台读取相册
