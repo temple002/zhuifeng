@@ -1,3 +1,24 @@
+Package: cn.zqbb.fix120hz15
+Name: iOS15免费版 120Hz Fix-RootHide
+Description:
+- Unlock dynamic refresh rate from 80hz to 120hz
+- .
+- 解锁动态刷新率80hz到120hz.
+Maintainer: zqbb
+Author: zqbb
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000) , firmware (>= 15.0) , firmware (<< 16.0)
+Icon: https://rootless.002599.xyz/web/icon/com.zqbb.fix120hz
+SileoDepiction: https://rootless.002599.xyz/web/com.zqbb.fix120hz
+Architecture: iphoneos-arm64e
+Version: 1.1.0-1
+Installed-Size: 72
+Filename: debs/cn.zqbb.fix120hz15_1.1.0-1_iphoneos-arm64e.deb
+Size: 12048
+MD5sum: 781d826a82221586e1e46663c69aa328
+SHA1: 012690a5afac16e702ff807f00169110e0f5a123
+SHA256: d5b3a2bdbacaf4f455315dd7412b370361026bff2afaeeea7f7a19d825675164
+
 Package: com.mtac.ampere
 Name: Ampere魔改版
 Description: iOS 16 Style Battery Indicator
@@ -35,6 +56,23 @@ Size: 105184
 MD5sum: 544043a14252e3b8ae647ffda352f65e
 SHA1: 05cd65a91705e0850bba43781fef85579d77b073
 SHA256: fd9434419fab918f27bcccd789487025959093895c9bbdb6d0cbf8725532c587
+
+Package: com.netskao.perfectgrabber
+Section: Tweaks
+Installed-Size: 360
+Maintainer: NetSkao / RootHide adaptation
+Architecture: iphoneos-arm64e
+Version: 1.1-8
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Description: Shows time and battery information around the pull-down grabber. Rebuilt for RootHide.
+Name: Ntonia-PreferenceLoader-仅电量+时间版本
+Author: NetSkao
+Icon: file:///Library/PreferenceBundles/PerfectGrabberSettings.bundle/.jbroot/Library/PreferenceBundles/PerfectGrabberSettings.bundle/NtoniaPGIcon.png
+Filename: debs/com.netskao.perfectgrabber_1.1-8_iphoneos-arm64e.deb
+Size: 199402
+MD5sum: 3c6005dffeefd3e0fc45ca6a1bca63db
+SHA1: 2a0683ae922a5d63a8b5c347c2cc6c80185bcced
+SHA256: 924f62ced0d4dc8ee35ac82f9a03fc91032437b1475420f4c8a91e0f7055b14a
 
 Package: com.newwares.badgesync
 Name: BadgeSync-RootHide
