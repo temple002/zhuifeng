@@ -196,3 +196,41 @@ Size: 49024
 MD5sum: 3dbe8942911d13b00f279b4de9dbbff2
 SHA1: f8c2be340798d4c97984873bce2182df4b37eb9a
 SHA256: 98c1364e2eb1ee1436abb001a7ac9f06a2c146bfad26b108d5ae1f679f81fbcd
+
+Package: com.zhuifeng.nobgalbumaccess
+Name: 禁止后台读取相册-RootHide
+Description: 禁止指定 App 在后台读取相册
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.0), mobilesubstrate | ellekit, preferenceloader, com.opa334.altlist
+Icon: https://temple002.github.io/zhuifeng/depictions/icon-nba.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.html
+Architecture: iphoneos-arm64
+Version: 1.0.1
+Installed-Size: 440
+Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.1_iphoneos-arm64.deb
+Size: 49400
+MD5sum: 01579a2aa136bb2440b2deb500696447
+SHA1: cda32ab279c47706690511a1622260d3d1f1d9d5
+SHA256: cd295f741f0c1a01e90fa01556b37d30efe4c81d6df8beb70f6f2e22f1300d61
+
+Package: com.zhuifeng.nobgalbumaccess
+Name: 禁止后台读取相册-RootHide
+Description: 禁止指定 App 在后台读取相册
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.0), mobilesubstrate | ellekit, preferenceloader, com.opa334.altlist
+Icon: https://temple002.github.io/zhuifeng/depictions/icon-nba.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.html
+Architecture: iphoneos-arm64e
+Version: 1.0.1
+Installed-Size: 440
+Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.1_iphoneos-arm64e.deb
+Size: 48716
+MD5sum: d33a4ac253ef1a1e59037ddd6837efb0
+SHA1: 90c4261eef3c5cb1b2ebee3b68f1b651614546cf
+SHA256: e971082a4d5c50e0e50cdceacfa06a0f9bdbba6e9922a29cb1af9d97151a7783
