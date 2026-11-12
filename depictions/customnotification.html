@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>通知权限模板 · 追风源</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; background: #0e1116; color: #e6e8eb; line-height: 1.7; padding: 20px 16px 60px; }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .hero { display: flex; align-items: center; gap: 16px; margin: 14px 0 10px; }
+  .hero img { width: 68px; height: 68px; border-radius: 16px; border: 1px solid #242b34; }
+  .hero h1 { font-size: 26px; line-height: 1.3; }
+  .hero .sub { color: #8b919a; font-size: 14px; margin-top: 2px; }
+  h3 { font-size: 19px; margin: 26px 0 10px; color: #fff; }
+  p { margin: 10px 0; color: #c8cdd4; }
+  blockquote { background: #161a20; border-left: 3px solid #0A84FF; border-radius: 8px; padding: 12px 16px; margin: 14px 0; color: #c8cdd4; }
+  ul { margin: 10px 0 10px 22px; color: #c8cdd4; }
+  li { margin: 6px 0; }
+  li b { color: #fff; }
+  code { background: #1f2530; padding: 2px 6px; border-radius: 5px; font-size: 13px; color: #7ee787; }
+  .shots { display: flex; flex-direction: column; align-items: center; gap: 24px; margin: 22px 0 6px; }
+  .shots img { width: 100%; max-width: 360px; border-radius: 20px; border: 1px solid #242b34; display: block; }
+  .caption { text-align: center; color: #5b616b; font-size: 13px; margin-bottom: 8px; }
+  .info { background: #161a20; border: 1px solid #242b34; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+  .row { display: flex; justify-content: space-between; gap: 16px; padding: 13px 16px; border-bottom: 1px solid #242b34; font-size: 15px; }
+  .row:last-child { border-bottom: none; }
+  .row .k { color: #8b919a; flex-shrink: 0; }
+  .row .v { color: #e6e8eb; text-align: right; }
+  .footer { text-align: center; color: #5b616b; font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img src="https://temple002.github.io/zhuifeng/depictions/customnotification/icon.png" alt="通知权限模板">
+    <div>
+      <h1>通知权限模板</h1>
+      <div class="sub">CustomNotification · 作者 zhuifeng</div>
+    </div>
+  </div>
+
+  <blockquote>新 App 首次弹通知权限时点「允许」，插件立刻按你预设的模板完成配置——全程无感，一步到位。</blockquote>
+
+  <h3>它解决什么问题</h3>
+  <p>装一个新 App，首次打开就弹通知权限弹窗——点「允许」，系统把锁定屏幕、通知中心、横幅、声音、标记<b>全部打开</b>；点「不允许」又全部关闭。想让新 App 只推横幅、不要声音和角标，就得事后再去设置页手动一个个改。</p>
+  <p><b>这个插件把这一步自动化了。</b></p>
+
+  <h3>功能</h3>
+  <ul>
+    <li><b>默认模板自定义</b>：锁定屏幕、通知中心、横幅三个展示位，以及声音、标记两个开关，每项独立控制默认开或关</li>
+    <li><b>横幅风格可选</b>：临时横幅（自动消失）或持续横幅（停留需手动处理）</li>
+    <li><b>总开关</b>：不需要时一键停用，不影响任何系统行为</li>
+    <li><b>精细落点</b>：直接在通知系统的最终写入点（SpringBoard 内的 UserNotificationsServer）按模板改写，而不是粗暴地替 App 拒绝授权——App 的通知能力完整保留，声音/标记虽然默认关闭，但设置页里的开关仍然存在，你随时可以手动打开</li>
+  </ul>
+
+  <div class="shots">
+    <img src="https://temple002.github.io/zhuifeng/depictions/customnotification/screen-01.png" alt="设置页">
+  </div>
+  <div class="caption">设置 → 通知权限模板</div>
+
+  <h3>设计原则：不打扰</h3>
+  <ul>
+    <li><b>只对「首次授权」生效</b>：已授权的 App 不受影响；你之后手动修改的任何设置，插件绝不会覆盖</li>
+    <li><b>fail-safe 设计</b>：所有依赖的私有方法都有存在性检查，系统未来改了内部实现，插件宁可失效也绝不误写、绝不导致崩溃或安全模式</li>
+    <li><b>零后台活动</b>：无定时器、无轮询、无常驻线程，只在通知设置被写入的那一瞬间介入，耗电影响实测为零</li>
+  </ul>
+
+  <h3>兼容性</h3>
+  <ul>
+    <li>支持系统：iOS 15 / 16 / 17（核心 hook 点与依赖属性经 15.4.1 实机 dump、16 / 17.0.3 头文件 dump 逐项比对）</li>
+    <li>越狱环境：RootHide（<code>iphoneos-arm64e</code>）与 Rootless（<code>iphoneos-arm64</code>）双包</li>
+    <li>注入范围：仅 SpringBoard，无需逐 App 开启注入</li>
+  </ul>
+
+  <h3>使用</h3>
+  <p>安装后在「设置 → 通知权限模板」里配好一次模板，以后所有新 App 首次授权自动套用。想给某几个 App 开声音？它们首次授权就是模板状态，你手动打开声音即可——插件不会再碰它们。</p>
+
+  <div class="info">
+    <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.0.1</span></div>
+    <div class="row"><span class="k">兼容</span><span class="v">iOS 15.0 ~ 17.x · Rootless / RootHide</span></div>
+    <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64 · iphoneos-arm64e</span></div>
+    <div class="row"><span class="k">注入范围</span><span class="v">仅 SpringBoard</span></div>
+  </div>
+
+  <div class="footer">通知权限模板 1.0.1 · 追风源 · 2026</div>
+</div>
+</body>
+</html>

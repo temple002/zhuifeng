@@ -1,0 +1,58 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#0A84FF",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "详情",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# 通知权限模板\n\n> 新 App 首次弹通知权限时点「允许」，插件立刻按你预设的模板完成配置——全程无感，一步到位。\n\n### 它解决什么问题\n\n装一个新 App，首次打开就弹通知权限弹窗——点「允许」，系统把锁定屏幕、通知中心、横幅、声音、标记**全部打开**；点「不允许」又全部关闭。想让新 App 只推横幅、不要声音和角标，就得事后再去设置页手动一个个改。\n\n**这个插件把这一步自动化了。**\n\n### 功能\n\n- **默认模板自定义**：锁定屏幕、通知中心、横幅三个展示位，以及声音、标记两个开关，每项独立控制默认开或关\n- **横幅风格可选**：临时横幅（自动消失）或持续横幅（停留需手动处理）\n- **总开关**：不需要时一键停用，不影响任何系统行为\n- **精细落点**：直接在通知系统的最终写入点（SpringBoard 内的 UserNotificationsServer）按模板改写，而不是粗暴地替 App 拒绝授权——App 的通知能力完整保留，声音/标记虽然默认关闭，但**设置页里的开关仍然存在**，你随时可以手动打开\n\n### 设计原则：不打扰\n\n- **只对「首次授权」生效**：已授权的 App 不受影响；你之后手动修改的任何设置，插件绝不会覆盖\n- **fail-safe 设计**：所有依赖的私有方法都有存在性检查，系统未来改了内部实现，插件宁可失效也绝不误写、绝不导致崩溃或安全模式\n- **零后台活动**：无定时器、无轮询、无常驻线程，只在通知设置被写入的那一瞬间介入，耗电影响实测为零\n\n### 兼容性\n\n- **iOS 15 / 16 / 17**：核心 hook 点与全部依赖属性已通过 iOS 15.4.1 实机 dump 和 iOS 16 / 17.0.3 公开头文件 dump 逐项比对，三代系统签名完全一致\n- **双架构**：RootHide（arm64e）与 Rootless（arm64）两个独立安装包，按你的越狱类型选择\n- **系统级注入**：只注入 SpringBoard，无需逐 App 开启注入，装完即用\n\n### 使用\n\n安装后在「设置 → 通知权限模板」里配好一次模板，以后所有新 App 首次授权自动套用。想给某几个 App 开声音？它们首次授权就是模板状态，你手动打开声音即可——插件不会再碰它们。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/customnotification/screen-01.png",
+          "width": 355,
+          "height": 768,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "zhuifeng / 追风"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "版本",
+          "text": "1.0.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "兼容",
+          "text": "iOS 15.0 ~ 17.x · Rootless / RootHide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "安装包",
+          "text": "iphoneos-arm64 · iphoneos-arm64e"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "注入范围",
+          "text": "仅 SpringBoard"
+        }
+      ]
+    }
+  ]
+}

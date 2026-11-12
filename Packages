@@ -19,6 +19,44 @@ MD5sum: 781d826a82221586e1e46663c69aa328
 SHA1: 012690a5afac16e702ff807f00169110e0f5a123
 SHA256: d5b3a2bdbacaf4f455315dd7412b370361026bff2afaeeea7f7a19d825675164
 
+Package: com.customnotification
+Name: 通知权限模板
+Description: 新 App 首次请求通知权限并点「允许」时，按模板设置默认权限（锁屏/通知中心/横幅/声音/标记）。已授权的 App 及手动修改不会被覆盖。
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
+Icon: https://temple002.github.io/zhuifeng/depictions/customnotification/icon.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/customnotification.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/customnotification.html
+Architecture: iphoneos-arm64
+Version: 1.0.1
+Installed-Size: 224
+Filename: debs/com.customnotification_1.0.1_iphoneos-arm64.deb
+Size: 21268
+MD5sum: c282a342b4260cf0e531e0b81b8e2d42
+SHA1: 3347ce2c490b0f9641460101d8acc62ca9ff6fb7
+SHA256: 52cdf5323df7d085cf442d8de4faceef6d60793a6495e173ee15e4fa4ba864c5
+
+Package: com.customnotification
+Name: 通知权限模板-RootHide
+Description: 新 App 首次请求通知权限并点「允许」时，按模板设置默认权限（锁屏/通知中心/横幅/声音/标记）。已授权的 App 及手动修改不会被覆盖。
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
+Icon: https://temple002.github.io/zhuifeng/depictions/customnotification/icon.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/customnotification.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/customnotification.html
+Architecture: iphoneos-arm64e
+Version: 1.0.1
+Installed-Size: 224
+Filename: debs/com.customnotification_1.0.1_iphoneos-arm64e.deb
+Size: 21196
+MD5sum: db2eb6a81c58e02ec30eb746de587350
+SHA1: cda1bc9af3e3b1c926134c56fee44146c57b7226
+SHA256: 720639b2d4607b85a06857e2005cde244b9b224092d4ad5c3356b494aabd67d6
+
 Package: com.mtac.ampere
 Name: Ampere魔改版
 Description: iOS 16 Style Battery Indicator
