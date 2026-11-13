@@ -1,0 +1,58 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#3B82F6",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "详情",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# 快捷时间胶囊\n\n*让状态栏保持它原本的样子，需要的信息点一下就来。*\n\n状态栏的美，在于克制。时间、信号、电量各就各位，一眼扫过就知道该知道的。\n\n可当你想在状态栏上多看到一点——日期、星期、秒数，甚至实时网速——通常只能借助自定义时间格式的插件，把这些内容硬塞进那一小条空间。刘海屏本就局促，文字一长不是被挤压，就是和图标挤在一起，原本干净利落的系统状态栏很快变得拥挤杂乱。想要更多信息，似乎只能牺牲简洁。\n\n**快捷时间胶囊想解决的正是这个矛盾。**\n\n它不改动状态栏的任何一个像素。轻点左上角的时间，一枚带尖角的胶囊从时间下方自然展开，把需要的信息一次给全：年月日、星期、时分秒，以及当前的上传与下载速度。点任意位置，胶囊安静收起，状态栏恢复原样。\n\n信息只在被需要的那一刻出现，其余时间它完全不存在。\n\n### 功能\n\n- **完整时间**：年月日、星期、时分秒，跟随系统语言、历法与 12/24 小时制\n- **实时网速**：上传与下载速率每秒更新，读取系统网络接口计数，无需任何额外权限\n- **视觉贴合系统**：苹果连续曲线圆角、毛玻璃材质、深浅色自动适配，尖角始终对准状态栏时间\n- **收纳自然**：点任意处或稍候自动收起，不打断正在进行的操作\n- **不改变原有习惯**：点时间不会让列表滚回顶部，下拉通知中心也不受影响\n\n### 省电\n\n- 没有常驻定时器、没有后台线程，不启用加速度计，也不监听方向变化\n- 1Hz 刷新只在胶囊展开的几秒内存在，收起即取消定时器、释放窗口与视图\n- 未展开时不创建任何界面，不做轮询\n- 网速采样走 `getifaddrs`，开销在微秒级\n\n### 兼容与稳定\n\n- 支持 iOS 15，提供 RootHide 与 Rootless 两种独立安装包，arm64 与 arm64e\n- 桌面、锁屏与任意第三方 App 内点击均有效\n- 不硬编码越狱路径，胶囊纯代码绘制，不打包图片资源\n- 对状态栏私有入口做运行时判空，接口一旦变化插件自动保持惰性，不会把设备拖进安全模式\n\n### 使用\n\n安装后注销一次，并重新打开已经运行的 App（注入发生在进程启动期）。设置中提供总开关（即时生效，无需注销）与注销按钮。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/dateinfo/screen-01.png",
+          "width": 355,
+          "height": 300,
+          "cornerRadius": 12,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "zhuifeng / 追风"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "版本",
+          "text": "1.1.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "兼容",
+          "text": "iOS 15 · Rootless / RootHide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "安装包",
+          "text": "iphoneos-arm64 · iphoneos-arm64e"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "注入范围",
+          "text": "SpringBoard / 桌面 / 锁屏 / 第三方 App"
+        }
+      ]
+    }
+  ]
+}
