@@ -31,12 +31,12 @@ SileoDepiction: https://temple002.github.io/zhuifeng/depictions/customnotificati
 Depiction: https://temple002.github.io/zhuifeng/depictions/customnotification.html
 Architecture: iphoneos-arm64
 Version: 1.0.1
-Installed-Size: 224
+Installed-Size: 416
 Filename: debs/com.customnotification_1.0.1_iphoneos-arm64.deb
-Size: 21268
-MD5sum: c282a342b4260cf0e531e0b81b8e2d42
-SHA1: 3347ce2c490b0f9641460101d8acc62ca9ff6fb7
-SHA256: 52cdf5323df7d085cf442d8de4faceef6d60793a6495e173ee15e4fa4ba864c5
+Size: 23980
+MD5sum: 0a7d782c2b3a816ab142296967c397c8
+SHA1: 4e8b79806f5ce766cd2dd586876794a7663b7feb
+SHA256: a6d8312384e30acd1131108c7ef597675f9a58b941dae98bdc7fbdac1413a278
 
 Package: com.customnotification
 Name: 通知权限模板-RootHide
@@ -50,12 +50,12 @@ SileoDepiction: https://temple002.github.io/zhuifeng/depictions/customnotificati
 Depiction: https://temple002.github.io/zhuifeng/depictions/customnotification.html
 Architecture: iphoneos-arm64e
 Version: 1.0.1
-Installed-Size: 224
+Installed-Size: 320
 Filename: debs/com.customnotification_1.0.1_iphoneos-arm64e.deb
-Size: 21196
-MD5sum: db2eb6a81c58e02ec30eb746de587350
-SHA1: cda1bc9af3e3b1c926134c56fee44146c57b7226
-SHA256: 720639b2d4607b85a06857e2005cde244b9b224092d4ad5c3356b494aabd67d6
+Size: 23430
+MD5sum: c42ca4c2e76bf7e22f281843253e382b
+SHA1: 2cdac2334013446e8b5c2dad256cb16095c60bf5
+SHA256: 4713e4cab48de543e4530e9c31cd8f1a69bd2077e311cbcd8faaf4679e58d28a
 
 Package: com.mtac.ampere
 Name: Ampere魔改版
@@ -325,10 +325,10 @@ Architecture: iphoneos-arm64
 Version: 1.0.1
 Installed-Size: 440
 Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.1_iphoneos-arm64.deb
-Size: 49400
-MD5sum: 01579a2aa136bb2440b2deb500696447
-SHA1: cda32ab279c47706690511a1622260d3d1f1d9d5
-SHA256: cd295f741f0c1a01e90fa01556b37d30efe4c81d6df8beb70f6f2e22f1300d61
+Size: 49028
+MD5sum: 5bb7a24560ccadc569a78013f2a35f23
+SHA1: e4a95afca6d6a2d280607d8a6e0c02ee108f4076
+SHA256: 55212c0c9c85f984a15dbf617329529865587a5b64250b8b7216b90c4c032b4c
 
 Package: com.zhuifeng.nobgalbumaccess
 Name: 禁止后台读取相册-RootHide
@@ -344,7 +344,7 @@ Architecture: iphoneos-arm64e
 Version: 1.0.1
 Installed-Size: 440
 Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.1_iphoneos-arm64e.deb
-Size: 48716
-MD5sum: d33a4ac253ef1a1e59037ddd6837efb0
-SHA1: 90c4261eef3c5cb1b2ebee3b68f1b651614546cf
-SHA256: e971082a4d5c50e0e50cdceacfa06a0f9bdbba6e9922a29cb1af9d97151a7783
+Size: 49696
+MD5sum: cbc3098f65546d78cc14dcf909075d84
+SHA1: ae733b226b8192d2255134a189d153757f3d32e5
+SHA256: ae4f46b5f64a304d6e55d2918b4c858de68b1736860762ee30b64b2f4dd150cd
