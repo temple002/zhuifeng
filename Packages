@@ -209,6 +209,44 @@ MD5sum: 1cb5ef39ffc32f931955e7b29d9fe764
 SHA1: af6d845a130c9b824826cc1c0fa715bf71c43217
 SHA256: 3a0b28496450d9a564250da1f416f587ddbd981299be26caeaaa1761b54db59a
 
+Package: com.hm.dateinfo
+Name: 快捷时间胶囊
+Description: 轻点状态栏时间，展开带尖角的胶囊显示日期、星期、时分秒与实时网速，状态栏本身一个像素都不改动。
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Icon: https://temple002.github.io/zhuifeng/depictions/dateinfo/icon.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.html
+Architecture: iphoneos-arm64
+Version: 1.2.0
+Installed-Size: 408
+Filename: debs/com.hm.dateinfo_1.2.0_iphoneos-arm64.deb
+Size: 40990
+MD5sum: 426967e9cde8225433da4f65c948735e
+SHA1: 9d285f6013b23a14fd6dc9ee4e2a1197f94abe04
+SHA256: 862c670f1fee1f464598518c90c19ba1f220d6696cdd38b8eed2ce66786eedd7
+
+Package: com.hm.dateinfo
+Name: 快捷时间胶囊-RootHide
+Description: 轻点状态栏时间，展开带尖角的胶囊显示日期、星期、时分秒与实时网速，状态栏本身一个像素都不改动。
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Icon: https://temple002.github.io/zhuifeng/depictions/dateinfo/icon.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.html
+Architecture: iphoneos-arm64e
+Version: 1.2.0
+Installed-Size: 408
+Filename: debs/com.hm.dateinfo_1.2.0_iphoneos-arm64e.deb
+Size: 40938
+MD5sum: 17466d2fa05c15d6042008cad885d7fa
+SHA1: c230bd525cec9e447ac3df9299979742a8712c11
+SHA256: d7ed5dd4d915479453d44cca0db3dae24266e9888a8f2d71bff134a71879caae
+
 Package: com.mtac.ampere
 Name: Ampere魔改版
 Description: iOS 16 Style Battery Indicator
