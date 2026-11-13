@@ -57,6 +57,44 @@ MD5sum: c42ca4c2e76bf7e22f281843253e382b
 SHA1: 2cdac2334013446e8b5c2dad256cb16095c60bf5
 SHA256: 4713e4cab48de543e4530e9c31cd8f1a69bd2077e311cbcd8faaf4679e58d28a
 
+Package: com.customnotification
+Name: 通知权限模板
+Description: 新 App 首次请求通知权限并点「允许」时，按模板设置默认权限（锁屏/通知中心/横幅/声音/标记）。已授权的 App 及手动修改不会被覆盖。
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
+Icon: https://temple002.github.io/zhuifeng/depictions/customnotification/icon.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/customnotification.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/customnotification.html
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 388
+Filename: debs/com.customnotification_1.0.2_iphoneos-arm64.deb
+Size: 23960
+MD5sum: cbac87beff6b6bc8b2aa1eec69744f92
+SHA1: 0d448dfcf1922c64153cfac7a7da2f6cd7aa55c9
+SHA256: 9217025c742fdea9e2bab9be4355370cdb5b0385a79c37c0ab1c03ced6de93b1
+
+Package: com.customnotification
+Name: 通知权限模板-Roothide
+Description: 新 App 首次请求通知权限并点「允许」时，按模板设置默认权限（锁屏/通知中心/横幅/声音/标记）。已授权的 App 及手动修改不会被覆盖。
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: mobilesubstrate | ellekit, preferenceloader, firmware (>= 15.0)
+Icon: https://temple002.github.io/zhuifeng/depictions/customnotification/icon.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/customnotification.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/customnotification.html
+Architecture: iphoneos-arm64e
+Version: 1.0.2
+Installed-Size: 196
+Filename: debs/com.customnotification_1.0.2_iphoneos-arm64e.deb
+Size: 22190
+MD5sum: ed8181aaf68bb751e7a7a22ebc496dc3
+SHA1: ffb77244f246a65a2845d7c848b936db131b4b18
+SHA256: 37ef0e103b6f495edcf728ad99097a6e96e8fcabf09832d6ccac784fe1c49500
+
 Package: com.mtac.ampere
 Name: Ampere魔改版
 Description: iOS 16 Style Battery Indicator
@@ -348,3 +386,41 @@ Size: 49696
 MD5sum: cbc3098f65546d78cc14dcf909075d84
 SHA1: ae733b226b8192d2255134a189d153757f3d32e5
 SHA256: ae4f46b5f64a304d6e55d2918b4c858de68b1736860762ee30b64b2f4dd150cd
+
+Package: com.zhuifeng.nobgalbumaccess
+Name: 禁止后台读取相册-RootHide
+Description: 禁止指定 App 在后台读取相册
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.0), mobilesubstrate | ellekit, preferenceloader, com.opa334.altlist
+Icon: https://temple002.github.io/zhuifeng/depictions/icon-nba.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.html
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 440
+Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.2_iphoneos-arm64.deb
+Size: 59478
+MD5sum: 39889d26c8ee62d5f294518366b2b6c2
+SHA1: 52a649d810ef7e1f176714c2b852768bae0a9a76
+SHA256: 5b1d405652748ac8e95fa9cf7ae19a2349623c9cdc7bdaa3274d4c6e69a20348
+
+Package: com.zhuifeng.nobgalbumaccess
+Name: 禁止后台读取相册-RootHide
+Description: 禁止指定 App 在后台读取相册
+Maintainer: zhuifeng
+Author: zhuifeng
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.0), mobilesubstrate | ellekit, preferenceloader, com.opa334.altlist
+Icon: https://temple002.github.io/zhuifeng/depictions/icon-nba.png
+SileoDepiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.json
+Depiction: https://temple002.github.io/zhuifeng/depictions/nobgalbum.html
+Architecture: iphoneos-arm64e
+Version: 1.0.2
+Installed-Size: 440
+Filename: debs/com.zhuifeng.nobgalbumaccess_1.0.2_iphoneos-arm64e.deb
+Size: 58690
+MD5sum: 6e462aea72316c0ebbbc64b5575c8b8a
+SHA1: 3fe8f50312413f2f148cd1f720db2a2dbe528adf
+SHA256: e13e2ca2bacc78e63799480e7e9868078a06fa1105d1fc5c1cac16392c90c1bc
