@@ -76,9 +76,10 @@
   @media (max-width: 560px) { .feats { grid-template-columns: 1fr 1fr; } }
 
   /* ===== 插件列表 ===== */
-  h2 { font-size: 22px; margin: 40px 0 18px; display: flex; align-items: center; gap: 10px; }
+  h2 { font-size: 22px; margin: 40px 0 6px; display: flex; align-items: center; gap: 10px; }
   h2::before { content: ""; width: 4px; height: 22px; border-radius: 4px;
     background: linear-gradient(#38bdf8, #818cf8); }
+  .note { font-size: 13px; color: #7c889d; margin: 0 0 18px; }
   #pkgs { display: grid; gap: 12px; }
   .pkg { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 16px;
     background: rgba(148,163,184,.06); border: 1px solid rgba(148,163,184,.14);
@@ -91,6 +92,7 @@
   .tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 500;
     background: rgba(56,189,248,.14); color: #7dd3fc; border: 1px solid rgba(56,189,248,.3); }
   .tag.rh { background: rgba(129,140,248,.14); color: #a5b4fc; border-color: rgba(129,140,248,.3); }
+  .tag.src { background: rgba(251,191,36,.14); color: #fcd34d; border-color: rgba(251,191,36,.3); }
   .pkg .desc { font-size: 13px; color: #8a96ab; margin-top: 3px;
     overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .pkg .ver { font-size: 12px; color: #5f6c81; font-family: ui-monospace, Menlo, monospace; flex-shrink: 0; }
@@ -129,6 +131,7 @@
   </div>
 
   <h2>收录插件</h2>
+  <p class="note">标注 <span class="tag src">原作者</span> 的插件由社区作者开发，本源仅作转载分发，版权与更新归原作者所有。</p>
   <div id="pkgs"><div class="empty">正在加载插件列表…</div></div>
 
   <footer>追风源 · Zhuifeng Repo · 由 GitHub Pages 强力驱动<br>在 Sileo 中添加本源即可获取更新</footer>
@@ -161,14 +164,18 @@ fetch("Packages").then(r => r.text()).then(text => {
   box.innerHTML = list.map(b => {
     const get = k => ((b.match(new RegExp("^" + k + ":\\s*(.+)", "m")) || [])[1] || "").trim();
     const pkg = get("Package"), name = get("Name"), desc = get("Description"),
-          ver = get("Version"), arch = get("Architecture"), icon = get("Icon");
+          ver = get("Version"), arch = get("Architecture"), icon = get("Icon"),
+          author = get("Author") || get("Maintainer");
     const isRH = /roothide|RootHide/i.test(name) || arch === "iphoneos-arm64e";
     const tag = isRH ? '<span class="tag rh">RootHide</span>' : '<span class="tag">Rootless</span>';
+    const isMine = /^zhuifeng$/i.test(author);
+    const authorTag = isMine ? "" :
+      `<span class="tag src">原作者 ${author || pkg}</span>`;
     const img = icon || REPO + "/CydiaIcon.png";
     return `<div class="pkg">
       <img src="${img}" alt="" onerror="this.src='${REPO}/CydiaIcon.png'">
       <div class="info">
-        <div class="name">${name} ${tag}</div>
+        <div class="name">${name} ${tag} ${authorTag}</div>
         <div class="desc">${desc}</div>
       </div>
       <div class="ver">v${ver}</div>
