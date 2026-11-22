@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>追风源 · Zhuifeng Repo</title>
+<link rel="icon" href="depictions/sharehotspotvpn/icon.png">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --accent: #38bdf8; --accent2: #818cf8; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    background: #05070d; color: #e7ebf2; line-height: 1.7;
+    min-height: 100vh; overflow-x: hidden;
+  }
+  /* ===== AI 质感背景 ===== */
+  .bg { position: fixed; inset: 0; z-index: -2; background:
+    radial-gradient(ellipse 60% 40% at 15% 10%, rgba(56,189,248,.16), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 85% 20%, rgba(129,140,248,.15), transparent 60%),
+    radial-gradient(ellipse 55% 40% at 50% 95%, rgba(14,165,233,.10), transparent 65%),
+    #05070d; }
+  .bg::after { content: ""; position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(148,163,184,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148,163,184,.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%); }
+  .orb { position: fixed; border-radius: 50%; filter: blur(90px); opacity: .35; z-index: -1;
+    animation: float 14s ease-in-out infinite alternate; }
+  .orb1 { width: 420px; height: 420px; left: -140px; top: -120px;
+    background: radial-gradient(circle, #0ea5e9, transparent 70%); }
+  .orb2 { width: 380px; height: 380px; right: -120px; top: 30%;
+    background: radial-gradient(circle, #6366f1, transparent 70%); animation-delay: -7s; }
+  @keyframes float { from { transform: translateY(0) } to { transform: translateY(48px) } }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 20px 80px; }
+
+  /* ===== Hero ===== */
+  .hero { text-align: center; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px;
+    border: 1px solid rgba(56,189,248,.35); border-radius: 999px; font-size: 13px;
+    color: #9fd6f5; background: rgba(56,189,248,.08); backdrop-filter: blur(8px); }
+  .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #34d399;
+    box-shadow: 0 0 10px #34d399; animation: pulse 2s infinite; }
+  @keyframes pulse { 50% { opacity: .4 } }
+  h1 { font-size: clamp(34px, 8vw, 52px); margin: 22px 0 10px; letter-spacing: .5px;
+    background: linear-gradient(120deg, #f0f6ff 30%, var(--accent) 60%, var(--accent2));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .sub { color: #93a0b5; font-size: 16px; max-width: 520px; margin: 0 auto; }
+  .sub b { color: #e7ebf2; }
+
+  /* ===== 添加按钮 ===== */
+  .actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin: 34px 0 8px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px;
+    border-radius: 16px; font-size: 17px; font-weight: 600; text-decoration: none;
+    transition: transform .15s, box-shadow .15s; cursor: pointer; border: none; }
+  .btn:active { transform: scale(.97); }
+  .btn-main { color: #04121f;
+    background: linear-gradient(120deg, #38bdf8, #6ee7b7);
+    box-shadow: 0 8px 32px rgba(56,189,248,.35), inset 0 1px 0 rgba(255,255,255,.5); }
+  .btn-main:hover { box-shadow: 0 10px 40px rgba(56,189,248,.5); transform: translateY(-2px); }
+  .btn-ghost { color: #c8d3e4; background: rgba(148,163,184,.08);
+    border: 1px solid rgba(148,163,184,.25); backdrop-filter: blur(8px); font-weight: 500; }
+  .btn-ghost:hover { background: rgba(148,163,184,.15); }
+  .url-hint { text-align: center; color: #5f6c81; font-size: 13px; margin-top: 14px;
+    font-family: ui-monospace, Menlo, monospace; user-select: all; }
+
+  /* ===== 特性 ===== */
+  .feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 44px 0 12px; }
+  .feat { text-align: center; padding: 18px 10px; border-radius: 16px;
+    background: rgba(148,163,184,.06); border: 1px solid rgba(148,163,184,.14);
+    backdrop-filter: blur(10px); }
+  .feat .ico { font-size: 22px; }
+  .feat .t { font-size: 14px; font-weight: 600; margin-top: 6px; color: #dbe4f0; }
+  .feat .d { font-size: 12px; color: #7c889d; margin-top: 2px; }
+  @media (max-width: 560px) { .feats { grid-template-columns: 1fr 1fr; } }
+
+  /* ===== 插件列表 ===== */
+  h2 { font-size: 22px; margin: 40px 0 18px; display: flex; align-items: center; gap: 10px; }
+  h2::before { content: ""; width: 4px; height: 22px; border-radius: 4px;
+    background: linear-gradient(#38bdf8, #818cf8); }
+  #pkgs { display: grid; gap: 12px; }
+  .pkg { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: 16px;
+    background: rgba(148,163,184,.06); border: 1px solid rgba(148,163,184,.14);
+    backdrop-filter: blur(10px); transition: border-color .15s, background .15s; }
+  .pkg:hover { border-color: rgba(56,189,248,.4); background: rgba(56,189,248,.06); }
+  .pkg img { width: 46px; height: 46px; border-radius: 11px; flex-shrink: 0;
+    background: #10141c; border: 1px solid rgba(148,163,184,.2); }
+  .pkg .info { flex: 1; min-width: 0; }
+  .pkg .name { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 500;
+    background: rgba(56,189,248,.14); color: #7dd3fc; border: 1px solid rgba(56,189,248,.3); }
+  .tag.rh { background: rgba(129,140,248,.14); color: #a5b4fc; border-color: rgba(129,140,248,.3); }
+  .pkg .desc { font-size: 13px; color: #8a96ab; margin-top: 3px;
+    overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .pkg .ver { font-size: 12px; color: #5f6c81; font-family: ui-monospace, Menlo, monospace; flex-shrink: 0; }
+  .empty { color: #5f6c81; text-align: center; padding: 30px; font-size: 14px; }
+
+  footer { text-align: center; color: #4d586d; font-size: 13px; margin-top: 56px; }
+  footer a { color: #7dd3fc; text-decoration: none; }
+  .toast { position: fixed; left: 50%; bottom: 40px; transform: translateX(-50%) translateY(20px);
+    background: rgba(20,28,40,.95); border: 1px solid rgba(56,189,248,.4); color: #7dd3fc;
+    padding: 10px 22px; border-radius: 12px; font-size: 14px; opacity: 0; pointer-events: none;
+    transition: opacity .25s, transform .25s; backdrop-filter: blur(10px); z-index: 10; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="wrap">
+  <div class="hero">
+    <span class="badge"><span class="dot"></span>在线运行中 · iOS 15 – 17</span>
+    <h1>追风源</h1>
+    <p class="sub">个人 iOS 越狱插件源，收录 <b id="cnt">–</b> 款免费插件，双架构支持 <b>Rootless / RootHide</b>，连接设备无需任何配置。</p>
+    <div class="actions">
+      <a class="btn btn-main" href="cydia://url/https://temple002.github.io/zhuifeng">＋ 添加到 Sileo / Cydia</a>
+      <button class="btn btn-ghost" onclick="copyUrl()">复制源地址</button>
+    </div>
+    <div class="url-hint">https://temple002.github.io/zhuifeng</div>
+  </div>
+
+  <div class="feats">
+    <div class="feat"><div class="ico">🆓</div><div class="t">完全免费</div><div class="d">无内购 · 无限制</div></div>
+    <div class="feat"><div class="ico">⚡</div><div class="t">双架构</div><div class="d">Rootless · RootHide</div></div>
+    <div class="feat"><div class="ico">🛡️</div><div class="t">纯净安全</div><div class="d">无广告 · 无追踪</div></div>
+  </div>
+
+  <h2>收录插件</h2>
+  <div id="pkgs"><div class="empty">正在加载插件列表…</div></div>
+
+  <footer>追风源 · Zhuifeng Repo · 由 GitHub Pages 强力驱动<br>在 Sileo 中添加本源即可获取更新</footer>
+</div>
+<div class="toast" id="toast">已复制源地址</div>
+
+<script>
+const REPO = "https://temple002.github.io/zhuifeng";
+
+function copyUrl() {
+  navigator.clipboard.writeText(REPO).then(() => {
+    const t = document.getElementById("toast");
+    t.classList.add("show");
+    setTimeout(() => t.classList.remove("show"), 1800);
+  });
+}
+
+fetch("Packages").then(r => r.text()).then(text => {
+  const blocks = text.split("\n\n").filter(b => b.startsWith("Package:"));
+  // 按包名去重，保留最新版本（文件顺序即构建顺序，同包后出现者较新）
+  const latest = {};
+  for (const b of blocks) {
+    const name = (b.match(/^Package:\s*(.+)/m) || [])[1]?.trim();
+    if (name) latest[name] = b;
+  }
+  const list = Object.values(latest);
+  const box = document.getElementById("pkgs");
+  document.getElementById("cnt").textContent = list.length;
+
+  box.innerHTML = list.map(b => {
+    const get = k => ((b.match(new RegExp("^" + k + ":\\s*(.+)", "m")) || [])[1] || "").trim();
+    const pkg = get("Package"), name = get("Name"), desc = get("Description"),
+          ver = get("Version"), arch = get("Architecture"), icon = get("Icon");
+    const isRH = /roothide|RootHide/i.test(name) || arch === "iphoneos-arm64e";
+    const tag = isRH ? '<span class="tag rh">RootHide</span>' : '<span class="tag">Rootless</span>';
+    const img = icon || REPO + "/CydiaIcon.png";
+    return `<div class="pkg">
+      <img src="${img}" alt="" onerror="this.src='${REPO}/CydiaIcon.png'">
+      <div class="info">
+        <div class="name">${name} ${tag}</div>
+        <div class="desc">${desc}</div>
+      </div>
+      <div class="ver">v${ver}</div>
+    </div>`;
+  }).join("");
+}).catch(() => {
+  document.getElementById("pkgs").innerHTML = '<div class="empty">列表加载失败，请刷新重试</div>';
+});
+</script>
+</body>
+</html>
