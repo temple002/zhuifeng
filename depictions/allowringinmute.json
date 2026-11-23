@@ -1,0 +1,73 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#FF3B30",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "详情",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# 静音响铃\n\n*静音模式下电话照常响铃，开会静音、睡前静音都不再错过任何来电。*\n\n## 🆓 免费使用\n\n本插件**完全免费**，无内购、无激活门槛、无功能限制，可自由安装使用。\n\n## ✨ 核心功能\n\n- **来电照常响铃**：静音模式下接到普通电话、FaceTime 及 CallKit 语音来电仍会正常响铃，音量与正常铃声一致。\n- **只放行来电**：其他通知、刷地铁卡及系统提示音保持默认静音规则，不会被误放开，静音依然「真静音」。\n- **即时生效**：设置页提供总开关，修改后立即生效，无需注销。\n\n## 📱 系统与越狱兼容\n\n- 支持 **iOS 15.0 – 17.x**，覆盖 Rootless（`arm64` / `arm64e`）与 RootHide（`arm64e`）双架构。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://temple002.github.io/zhuifeng/depictions/allowringinmute/icon.png",
+          "width": 512,
+          "height": 512,
+          "cornerRadius": 51,
+          "alignment": 1
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "作者",
+          "text": "zhuifeng / 追风"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "版本",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "兼容",
+          "text": "iOS 15–17 · Rootless / RootHide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "安装包",
+          "text": "iphoneos-arm64 · iphoneos-arm64e"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "依赖",
+          "text": "preferenceloader · MobileSubstrate / ElleKit"
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "更新记录",
+      "views": [
+        {
+          "class": "DepictionTableTextView",
+          "title": "v1.0.0",
+          "text": "2026-11-23"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 首个版本：静音模式下普通电话、FaceTime 与 CallKit 语音来电照常响铃\n- 其他通知与系统提示音保持静音规则不变\n- 设置页总开关，即时生效"
+        }
+      ]
+    }
+  ]
+}
