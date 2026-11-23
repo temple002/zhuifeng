@@ -35,7 +35,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.1.6"
+          "text": "1.1.7"
         },
         {
           "class": "DepictionTableTextView",
@@ -58,6 +58,18 @@
       "class": "DepictionStackView",
       "tabname": "更新记录",
       "views": [
+        {
+          "class": "DepictionTableTextView",
+          "title": "v1.1.7",
+          "text": "2026-11-23"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 新增「自动启动」设置：联动检测个人热点开启或 VPN 连接后自动启动服务，无需手动操作\n- 设置页新增对应开关，默认关闭"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionTableTextView",
           "title": "v1.1.6",
