@@ -53,14 +53,17 @@
   <p><b>信息只在被需要的那一刻出现，其余时间它完全不存在。</b></p>
 
   <div class="shots">
-    <img src="https://temple002.github.io/zhuifeng/depictions/dateinfo/screen-01.png" alt="胶囊展开效果">
+    <img src="https://temple002.github.io/zhuifeng/depictions/dateinfo/screen-01.png" alt="胶囊展开效果：时间、天气与网速">
   </div>
-  <div class="caption">轻点状态栏时间，胶囊向下展开</div>
+  <div class="caption">轻点状态栏时间，胶囊向下展开：日期、天气与实时网速</div>
 
   <h3>功能</h3>
   <ul>
     <li><b>完整时间</b>：年月日、星期、时分秒，跟随系统语言、历法与 12/24 小时制</li>
     <li><b>实时网速</b>：上传与下载速率每秒更新，读取系统网络接口计数，无需任何额外权限</li>
+    <li><b>今日天气</b>：温度、天气图标与空气质量一目了然，气温条渐变还原 iOS 天气配色</li>
+    <li><b>未来三天预报</b>：逐日温度范围，配色与系统天气一致</li>
+    <li><b>手动配置地区</b>：天气城市在设置页手动填写（支持内置城市表快速选择），<b>无需把天气 App 的定位权限设为「始终」</b>，隐私更安心</li>
     <li><b>视觉贴合系统</b>：苹果连续曲线圆角、毛玻璃材质、深浅色自动适配，尖角始终对准状态栏时间</li>
     <li><b>收纳自然</b>：点任意处或稍候自动收起，不打断正在进行的操作</li>
     <li><b>不改变原有习惯</b>：点时间不会让列表滚回顶部，下拉通知中心也不受影响</li>
@@ -72,11 +75,13 @@
     <li>1Hz 刷新只在胶囊展开的几秒内存在，收起即取消定时器、释放窗口与视图</li>
     <li>未展开时不创建任何界面，不做轮询</li>
     <li>网速采样走 <code>getifaddrs</code>，开销在微秒级</li>
+    <li>天气刷新同样为智能调度：锁屏/熄屏暂停，解锁自动补刷；无网络不请求，网络恢复自动刷新</li>
   </ul>
 
   <h3>兼容与稳定</h3>
   <ul>
     <li>支持 iOS 15，提供 RootHide 与 Rootless 两种独立安装包，arm64 与 arm64e</li>
+    <li>天气功能目前仅在 <b>iOS 15</b> 上测试通过</li>
     <li>桌面、锁屏与任意第三方 App 内点击均有效</li>
     <li>不硬编码越狱路径，胶囊纯代码绘制，不打包图片资源</li>
     <li>对状态栏私有入口做运行时判空，接口一旦变化插件自动保持惰性，不会把设备拖进安全模式</li>
@@ -85,15 +90,39 @@
   <h3>使用</h3>
   <p>安装后注销一次，并重新打开已经运行的 App（注入发生在进程启动期）。设置中提供总开关（即时生效，无需注销）与注销按钮。</p>
 
+  <h3>更新记录</h3>
+  <div class="chg">
+    <div class="ver"><b>v1.3.5</b> · 2026-11-24</div>
+    <ul><li>胶囊新增天气显示：当前天气、空气质量与未来 3 天预报</li><li>天气地区手动配置（设置页城市输入框 + 内置城市表），无需天气 App 定位权限「始终」</li><li>天气刷新智能调度：锁屏/息屏暂停省电，解锁自动补刷；无网络不请求，网络恢复自动刷新</li><li>今日天气布局重排与细节优化</li><li>天气功能仅在 iOS 15 上测试</li></ul>
+    <div class="ver"><b>v1.3.4</b> · 2026-11-19</div>
+    <ul><li>回退毛玻璃基线并定版：连续圆角、日期字号调大、阴影更淡更通透</li></ul>
+    <div class="ver"><b>v1.3.2</b> · 2026-11-18</div>
+    <ul><li>导航/录音/通话等活动状态下点击放行给对应 App，设置内可开关</li></ul>
+    <div class="ver"><b>v1.3.1</b> · 2026-11-16</div>
+    <ul><li>气泡文本加粗，阴影观感优化</li></ul>
+    <div class="ver"><b>v1.3.0</b> · 2026-11-16</div>
+    <ul><li>版本整合</li></ul>
+    <div class="ver"><b>v1.2.0</b> · 2026-11-13</div>
+    <ul><li>状态栏点击改由 SpringBoard 系统手势窗口捕获，兼容性提升</li></ul>
+    <div class="ver"><b>v1.1.4</b> · 2026-11-13</div>
+    <ul><li>开关状态缓存 + 锁屏/后台自动收起，降低耗电</li></ul>
+    <div class="ver"><b>v1.1.3</b> · 2026-11-13</div>
+    <ul><li>气泡加入 popover 风格阴影</li></ul>
+    <div class="ver"><b>v1.1.2</b> · 2026-11-13</div>
+    <ul><li>取消 8 秒自动隐藏，交互更从容</li></ul>
+    <div class="ver"><b>v1.1.0</b> · 2026-11-13</div>
+    <ul><li>快捷时间胶囊首个版本</li></ul>
+  </div>
+
   <div class="info">
     <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
-    <div class="row"><span class="k">版本</span><span class="v">1.3.4</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.3.5</span></div>
     <div class="row"><span class="k">兼容</span><span class="v">iOS 15 · Rootless / RootHide</span></div>
     <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64 · iphoneos-arm64e</span></div>
     <div class="row"><span class="k">注入范围</span><span class="v">SpringBoard / 桌面 / 锁屏 / 第三方 App</span></div>
   </div>
 
-  <div class="footer">快捷时间胶囊 1.3.4 · 追风源 · 2026</div>
+  <div class="footer">快捷时间胶囊 1.3.5 · 追风源 · 2026</div>
 </div>
 </body>
 </html>
