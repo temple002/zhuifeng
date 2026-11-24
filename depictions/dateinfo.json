@@ -35,7 +35,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.3.7"
+          "text": "1.3.8"
         },
         {
           "class": "DepictionTableTextView",
@@ -58,6 +58,18 @@
       "class": "DepictionStackView",
       "tabname": "更新记录",
       "views": [
+        {
+          "class": "DepictionTableTextView",
+          "title": "v1.3.8",
+          "text": "2026-11-24"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 城市表补充主要城市高频城区 130 个（含顺德、浦东、北京朝阳等），热门区域可直接命中，无需写上级地区"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionTableTextView",
           "title": "v1.3.7",
