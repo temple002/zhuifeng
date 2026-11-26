@@ -45,31 +45,48 @@
     </div>
   </div>
 
-  <p class="lead">将本机 Shadowrocket（小火箭）或其他 VPN 通过 iOS 个人热点无缝共享给周围设备，连上热点即刻畅享 VPN，客户端零配置。</p>
+  <p class="lead">将本机的 Wi-Fi、蜂窝移动数据或 Shadowrocket（小火箭）等 VPN 通过 iOS 个人热点共享给周围设备，五种模式一键切换，连上热点即刻上网，客户端零配置。</p>
 
-  <blockquote><b>连上热点即可走本机 VPN，连接设备无需任何代理配置。</b></blockquote>
+  <blockquote><b>连上热点即可走本机 VPN 或 Wi-Fi，连接设备无需任何代理配置。</b></blockquote>
 
   <div class="shots">
     <img src="https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/screen-01.png" alt="VPN 热点共享设置页">
   </div>
-  <div class="caption">设置页实时展示运行状态、转发统计与各项开关</div>
+  <div class="caption">设置页实时展示运行状态、热点 / Wi-Fi / VPN 接口与转发统计</div>
+
+  <div class="shots">
+    <img src="https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/screen-02.png" alt="控制中心长按切换共享模式">
+  </div>
+  <div class="caption">控制中心长按，直接切换五种共享模式</div>
 
   <h3>🆓 免费使用</h3>
   <p>本插件<b>完全免费</b>，无内购、无激活门槛、无功能限制，可自由安装使用。</p>
 
   <h3>✨ 核心功能</h3>
   <ul>
-    <li><b>客户端零配置共享</b>：手机、电脑、平板、Switch / PS 等设备连入个人热点即可自动走本机 VPN，无需在连接设备上手动设置代理或安装任何软件。</li>
+    <li><b>五种共享模式</b>：自动、仅共享 Wi-Fi、仅共享数据、Wi-Fi + VPN、数据 + VPN，按当前网络自动切换或强制指定，热点设备全程零配置。</li>
+    <li><b>Wi-Fi 也能共享</b>：不只是共享 VPN，还能把本机当前连接的 Wi-Fi 直接分给热点设备；共享 Wi-Fi 时状态栏保留 Wi-Fi 图标。</li>
     <li><b>全协议透明转发</b>：支持 TCP 透明转发、DNS 劫持转发（完美适配 Fake-IP 分流规则），以及可选 UDP 转发（支持语音、游戏与 QUIC；若节点不支持 UDP，可一键关闭自动回落至 TCP）。</li>
-    <li><b>防闪断保活</b>：内置一键放宽 VPN 内存上限（提升至 256MB），有效避免大流量或多设备并发时 Shadowrocket 因系统内存限制被杀后台。</li>
-    <li><b>状态一目了然</b>：设置页实时展示运行状态、热点连入设备数量、VPN 接口/DNS 及 TCP/DNS/UDP 转发统计。</li>
+    <li><b>防闪断保活</b>：内置一键放宽 VPN 内存上限（提升至 256MB），并新增 wifid 优先级保护，有效避免大流量或多设备并发时热点或 VPN 进程被杀后台。</li>
+    <li><b>状态一目了然</b>：设置页实时展示当前状态、个人热点、Wi-Fi 接口（含本机 IP）、VPN 接口及 TCP / DNS / UDP 转发统计。</li>
     <li><b>运行日志与诊断导出</b>：内置轻量运行日志，设置内可直接查看，并一键导出诊断状态与偏好配置（UTF-8 JSON），反馈问题时快速提供现场信息。</li>
   </ul>
 
+  <h3>🎛️ 五种共享模式</h3>
+  <ul>
+    <li><b>自动（推荐）</b>：根据当前网络自动切换——仅连 Wi-Fi 时共享 Wi-Fi；仅用移动数据时共享移动数据；移动数据 + VPN 时共享数据 VPN；Wi-Fi + VPN 时自动叠加共享（经 Wi-Fi 再走 VPN）。</li>
+    <li><b>仅共享 Wi-Fi</b>：强制共享本机 Wi-Fi（即使开启 VPN 也直走 Wi-Fi），状态栏保持显示 Wi-Fi；未连 Wi-Fi 时待机。</li>
+    <li><b>仅共享数据</b>：强制走系统蜂窝移动数据直通（不经插件代理或 VPN）。</li>
+    <li><b>Wi-Fi + VPN</b>：强制叠加共享（本机与热点均经 Wi-Fi 走 VPN），状态栏保持显示 Wi-Fi；Wi-Fi 或 VPN 未连接时待机。</li>
+    <li><b>数据 + VPN</b>：强制经蜂窝移动数据走 VPN（即使连着 Wi-Fi 也切回移动数据）；VPN 未连接时待机。</li>
+  </ul>
+  <p>共享 Wi-Fi 时仍需保持蜂窝数据开关开启以维持个人热点，但实际流量全程走 Wi-Fi，不消耗手机流量。若其他设备搜不到热点，建议在系统「个人热点」中打开「最大兼容性」。</p>
+
   <h3>⚡ 简便易用</h3>
   <ul>
-    <li><b>控制中心一键开关</b>：自带控制中心快捷模块（依赖 CCSupport），下拉控制中心即可随时开启或关闭，并与系统设置页实时同步。</li>
-    <li><b>自动开启 WiFi 和 VPN</b>（v1.1.7 新增「同时开启」）：可设为无 / 个人热点 / VPN / 个人热点+VPN。配置后，打开总开关（或控制中心快捷开关）时会自动连带开启所选的个人热点或 VPN，关闭总开关时也会一并关闭；若因蜂窝移动数据未开启等原因导致开启失败，会弹出提示。</li>
+    <li><b>控制中心轻点开关</b>：自带控制中心快捷模块（依赖 CCSupport），轻点即启停插件，并与系统设置页实时同步。</li>
+    <li><b>控制中心长按切模式</b>：长按模块弹出菜单，直接选择五种共享模式，无需进设置；图标与颜色会随当前模式自动变化。</li>
+    <li><b>与个人热点联动</b>：打开「开启热点共享」（或轻点控制中心开关）时自动开启系统「个人热点」，关闭时一并关闭；若蜂窝数据未开启导致热点打不开，会弹出提示。</li>
   </ul>
 
   <h3>🛡️ 安全与隐私</h3>
@@ -92,6 +109,12 @@
 
   <h3>📝 更新记录</h3>
   <div class="chg">
+    <div class="ver"><b>v1.2.2</b> · 2026-11-26</div>
+    <ul><li>精简设置页 Wi-Fi 状态文字，避免长文本挤压换行</li><li>控制中心长按菜单补充左侧留白，选项不再贴边</li></ul>
+    <div class="ver"><b>v1.2.1</b> · 2026-11-26</div>
+    <ul><li>修复控制中心模块偶发崩溃</li><li>「自动开启」改为与个人热点联动的开关逻辑：打开共享即联动开启个人热点，关闭时一并关闭</li><li>新增 wifid 优先级 hook 与诊断信息，提升热点进程存活率</li></ul>
+    <div class="ver"><b>v1.2.0</b> · 2026-11-26</div>
+    <ul><li>重磅新增五种共享模式：自动 / 仅共享 Wi-Fi / 仅共享数据 / Wi-Fi + VPN / 数据 + VPN</li><li>控制中心支持长按弹出菜单，直接切换共享模式，图标与颜色随模式变化</li><li>共享 Wi-Fi 时状态栏保留 Wi-Fi 图标，不再显示为「个人热点」</li></ul>
     <div class="ver"><b>v1.1.7</b> · 2026-11-23</div>
     <ul><li>新增「同时开启」设置：打开总开关时可自动连带开启个人热点或 VPN，关闭时一并关闭</li><li>可选项：无 / 个人热点 / VPN / 个人热点+VPN，默认「无」</li></ul>
     <div class="ver"><b>v1.1.6</b> · 2026-11-22</div>
@@ -122,13 +145,13 @@
 
   <div class="info">
     <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
-    <div class="row"><span class="k">版本</span><span class="v">1.1.7</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.2.2</span></div>
     <div class="row"><span class="k">兼容</span><span class="v">iOS 15–17 · Rootless / RootHide</span></div>
     <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64 · iphoneos-arm64e</span></div>
     <div class="row"><span class="k">依赖</span><span class="v">preferenceloader · CCSupport</span></div>
   </div>
 
-  <div class="footer">VPN热点共享 1.1.7 · 追风源 · 2026</div>
+  <div class="footer">VPN热点共享 1.2.2 · 追风源 · 2026</div>
 </div>
 </body>
 </html>
