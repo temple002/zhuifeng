@@ -67,7 +67,7 @@
     <li><b>五种共享模式</b>：自动、仅共享 Wi-Fi、仅共享数据、Wi-Fi + VPN、数据 + VPN，按当前网络自动切换或强制指定，热点设备全程零配置。</li>
     <li><b>Wi-Fi 也能共享</b>：不只是共享 VPN，还能把本机当前连接的 Wi-Fi 直接分给热点设备；共享 Wi-Fi 时状态栏保留 Wi-Fi 图标。</li>
     <li><b>全协议透明转发</b>：支持 TCP 透明转发、DNS 劫持转发（完美适配 Fake-IP 分流规则），以及可选 UDP 转发（支持语音、游戏与 QUIC；若节点不支持 UDP，可一键关闭自动回落至 TCP）。</li>
-    <li><b>防闪断保活</b>：内置一键放宽 VPN 内存上限（提升至 256MB），并新增 wifid 优先级保护，有效避免大流量或多设备并发时热点或 VPN 进程被杀后台。</li>
+    <li><b>防闪断保活</b>：内置一键放宽 VPN 内存上限（提升至 256MB），并对热点服务做了优先级保护，有效避免大流量或多设备并发时热点或 VPN 进程被杀后台。</li>
     <li><b>状态一目了然</b>：设置页实时展示当前状态、个人热点、Wi-Fi 接口（含本机 IP）、VPN 接口及 TCP / DNS / UDP 转发统计。</li>
     <li><b>运行日志与诊断导出</b>：内置轻量运行日志，设置内可直接查看，并一键导出诊断状态与偏好配置（UTF-8 JSON），反馈问题时快速提供现场信息。</li>
   </ul>
@@ -109,10 +109,14 @@
 
   <h3>📝 更新记录</h3>
   <div class="chg">
+    <div class="ver"><b>v1.2.4</b> · 2026-11-27</div>
+    <ul><li>修复开启共享后，连入设备偶尔搜不到热点的问题</li></ul>
+    <div class="ver"><b>v1.2.3</b> · 2026-11-27</div>
+    <ul><li>提升 iOS 15.0–15.0.2 系统上的共享稳定性</li></ul>
     <div class="ver"><b>v1.2.2</b> · 2026-11-26</div>
     <ul><li>精简设置页 Wi-Fi 状态文字，避免长文本挤压换行</li><li>控制中心长按菜单补充左侧留白，选项不再贴边</li></ul>
     <div class="ver"><b>v1.2.1</b> · 2026-11-26</div>
-    <ul><li>修复控制中心模块偶发崩溃</li><li>「自动开启」改为与个人热点联动的开关逻辑：打开共享即联动开启个人热点，关闭时一并关闭</li><li>新增 wifid 优先级 hook 与诊断信息，提升热点进程存活率</li></ul>
+    <ul><li>修复控制中心模块偶发崩溃</li><li>「自动开启」改为与个人热点联动的开关逻辑：打开共享即联动开启个人热点，关闭时一并关闭</li><li>优化热点后台存活能力，减少共享中途断开</li></ul>
     <div class="ver"><b>v1.2.0</b> · 2026-11-26</div>
     <ul><li>重磅新增五种共享模式：自动 / 仅共享 Wi-Fi / 仅共享数据 / Wi-Fi + VPN / 数据 + VPN</li><li>控制中心支持长按弹出菜单，直接切换共享模式，图标与颜色随模式变化</li><li>共享 Wi-Fi 时状态栏保留 Wi-Fi 图标，不再显示为「个人热点」</li></ul>
     <div class="ver"><b>v1.1.7</b> · 2026-11-23</div>
@@ -145,13 +149,13 @@
 
   <div class="info">
     <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
-    <div class="row"><span class="k">版本</span><span class="v">1.2.2</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.2.4</span></div>
     <div class="row"><span class="k">兼容</span><span class="v">iOS 15–17 · Rootless / RootHide</span></div>
     <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64 · iphoneos-arm64e</span></div>
     <div class="row"><span class="k">依赖</span><span class="v">preferenceloader · CCSupport</span></div>
   </div>
 
-  <div class="footer">VPN热点共享 1.2.2 · 追风源 · 2026</div>
+  <div class="footer">VPN热点共享 1.2.4 · 追风源 · 2026</div>
 </div>
 </body>
 </html>
