@@ -329,13 +329,13 @@ Icon: https://temple002.github.io/zhuifeng/depictions/dateinfo/icon.png
 SileoDepiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.json
 Depiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.html
 Architecture: iphoneos-arm64
-Version: 1.3.9
+Version: 1.3.10
 Installed-Size: 792
-Filename: debs/com.zhuifeng.dateinfo_1.3.9_iphoneos-arm64.deb
-Size: 118192
-MD5sum: c54f8286dc26a427289edd0adc9fcc36
-SHA1: 436f29a7c51274a73fe922541dec9a683c535be3
-SHA256: 9493feb7c6ffb4c81760f1386dd44ecd5accd926bfcdaae6adf0c6ddeaaadf22
+Filename: debs/com.zhuifeng.dateinfo_1.3.10_iphoneos-arm64.deb
+Size: 119618
+MD5sum: b4478006a0f1313cbb077c2addb79235
+SHA1: 525eae727da5d989db655d417625573d9c04974e
+SHA256: fb61c3215779aeef3a39fc800cc8484d67310cf71a134d59fc73dd393c724884
 
 Package: com.zhuifeng.dateinfo
 Name: 快捷时间胶囊-RootHide
@@ -348,13 +348,13 @@ Icon: https://temple002.github.io/zhuifeng/depictions/dateinfo/icon.png
 SileoDepiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.json
 Depiction: https://temple002.github.io/zhuifeng/depictions/dateinfo.html
 Architecture: iphoneos-arm64e
-Version: 1.3.9
+Version: 1.3.10
 Installed-Size: 792
-Filename: debs/com.zhuifeng.dateinfo_1.3.9_iphoneos-arm64e.deb
-Size: 117612
-MD5sum: b8beca67d33e32d2b6bed50bfb348371
-SHA1: a29316126c389a21c93d0e26058e1d40465a3ee4
-SHA256: dfd8d8601fd0502427ec99fd7c02034e2d73f23fb0541a42aa94462da46d875a
+Filename: debs/com.zhuifeng.dateinfo_1.3.10_iphoneos-arm64e.deb
+Size: 119646
+MD5sum: 2f536670c02a75bca9fe2e1ac49afced
+SHA1: b47a0f81845b719fd8b5c82440bfd7444b024f2c
+SHA256: d9b75f2b3eed1eeeeacf7b1357d989b8154a939763bf387485c919a8223950cc
 
 Package: com.zhuifeng.nobgalbumaccess
 Name: 禁止后台读取相册-RootHide
