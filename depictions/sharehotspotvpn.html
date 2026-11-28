@@ -32,6 +32,10 @@
   .chg .ver { font-weight: 600; color: #dbe4f0; font-size: 14px; margin: 16px 0 4px; }
   .chg .ver:first-child { margin-top: 0; }
   .chg ul { margin: 4px 0 0 22px; }
+  .nolimit { background: linear-gradient(135deg, #14231c 0%, #16202a 100%); border: 1px solid #2f6b46; border-radius: 12px; padding: 16px 18px; margin: 18px 0; }
+  .nolimit .t { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .nolimit p { margin: 6px 0 0; color: #c8cdd4; }
+  .nolimit b { color: #7ee787; }
 </style>
 </head>
 <body>
@@ -49,6 +53,12 @@
 
   <blockquote><b>连上热点即可走本机 VPN 或 Wi-Fi，连接设备无需任何代理配置。</b></blockquote>
 
+  <div class="nolimit">
+    <div class="t">🛫 不插卡、不开蜂窝、飞行模式照样共享</div>
+    <p><b>没插 SIM 卡</b>（备用机、无卡激活的设备）、<b>关闭蜂窝数据</b>、甚至直接<b>打开飞行模式</b>，都能把本机 Wi-Fi 或 Wi-Fi + VPN 共享出去。</p>
+    <p>以前 iOS 的个人热点必须依赖蜂窝网络才能开启，没卡就整条路走不通。现在这个限制被彻底绕开了：只要连着 Wi-Fi，哪怕全程飞行模式，热点一样能开，其他设备照样上网。</p>
+  </div>
+
   <div class="shots">
     <img src="https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/screen-01.png" alt="VPN 热点共享设置页">
   </div>
@@ -64,6 +74,7 @@
 
   <h3>✨ 核心功能</h3>
   <ul>
+    <li><b>无卡 / 飞行模式可用</b>：不插 SIM 卡、关闭蜂窝数据或开启飞行模式，依然能共享本机 Wi-Fi 与 Wi-Fi + VPN，个人热点不再依赖蜂窝网络。</li>
     <li><b>五种共享模式</b>：自动、仅共享 Wi-Fi、仅共享数据、Wi-Fi + VPN、数据 + VPN，按当前网络自动切换或强制指定，热点设备全程零配置。</li>
     <li><b>Wi-Fi 也能共享</b>：不只是共享 VPN，还能把本机当前连接的 Wi-Fi 直接分给热点设备；共享 Wi-Fi 时状态栏保留 Wi-Fi 图标。</li>
     <li><b>全协议透明转发</b>：支持 TCP 透明转发、DNS 劫持转发（完美适配 Fake-IP 分流规则），以及可选 UDP 转发（支持语音、游戏与 QUIC；若节点不支持 UDP，可一键关闭自动回落至 TCP）。</li>
@@ -80,7 +91,7 @@
     <li><b>Wi-Fi + VPN</b>：强制叠加共享（本机与热点均经 Wi-Fi 走 VPN），状态栏保持显示 Wi-Fi；Wi-Fi 或 VPN 未连接时待机。</li>
     <li><b>数据 + VPN</b>：强制经蜂窝移动数据走 VPN（即使连着 Wi-Fi 也切回移动数据）；VPN 未连接时待机。</li>
   </ul>
-  <p>共享 Wi-Fi 时仍需保持蜂窝数据开关开启以维持个人热点，但实际流量全程走 Wi-Fi，不消耗手机流量。若其他设备搜不到热点，建议在系统「个人热点」中打开「最大兼容性」。</p>
+  <p>共享 Wi-Fi 时<b>无需开启蜂窝数据</b>，不插卡、开飞行模式同样能用，实际流量全程走 Wi-Fi，不消耗手机流量。若其他设备搜不到热点，建议在系统「个人热点」中打开「最大兼容性」。</p>
 
   <h3>⚡ 简便易用</h3>
   <ul>
@@ -109,6 +120,10 @@
 
   <h3>📝 更新记录</h3>
   <div class="chg">
+    <div class="ver"><b>v1.3.1</b> · 2026-11-28</div>
+    <ul><li>修复从飞行模式切换回来后，热点会自己重新打开的问题</li></ul>
+    <div class="ver"><b>v1.3.0</b> · 2026-11-28</div>
+    <ul><li><b>不插卡也能共享</b>：手机没插 SIM 卡时，依然可以把本机 Wi-Fi 或 Wi-Fi + VPN 共享给其他设备</li><li><b>关蜂窝、飞行模式也能共享</b>：关闭蜂窝数据或直接打开飞行模式，热点照样能开，不再依赖蜂窝网络</li><li>个人热点彻底摆脱对运营商网络的依赖，只连着 Wi-Fi 就能用</li></ul>
     <div class="ver"><b>v1.2.4</b> · 2026-11-27</div>
     <ul><li>修复开启共享后，连入设备偶尔搜不到热点的问题</li></ul>
     <div class="ver"><b>v1.2.3</b> · 2026-11-27</div>
@@ -149,13 +164,13 @@
 
   <div class="info">
     <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
-    <div class="row"><span class="k">版本</span><span class="v">1.2.4</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.3.1</span></div>
     <div class="row"><span class="k">兼容</span><span class="v">iOS 15–17 · Rootless / RootHide</span></div>
     <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64 · iphoneos-arm64e</span></div>
     <div class="row"><span class="k">依赖</span><span class="v">preferenceloader · CCSupport</span></div>
   </div>
 
-  <div class="footer">VPN热点共享 1.2.4 · 追风源 · 2026</div>
+  <div class="footer">VPN热点共享 1.3.1 · 追风源 · 2026</div>
 </div>
 </body>
 </html>

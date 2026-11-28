@@ -282,7 +282,7 @@ SHA256: f5550ceca8373f7a173fa17c7471f76a38a985de40ef73be891601e04d9e5fcd
 
 Package: com.sharehotspotvpn.tweak
 Name: VPN热点共享
-Description: 一键通过个人热点共享本机 Wi-Fi、移动数据或 Shadowrocket/VPN（支持 Wi-Fi+VPN 叠加与状态栏保留 Wi-Fi 图标），连入设备零配置，控制中心支持轻点开关与长按 5 模式菜单切换，事件驱动超省电，兼容 iOS 15–17 Rootless/RootHide。
+Description: 一键通过个人热点共享本机 Wi-Fi、移动数据或 Shadowrocket/VPN（支持无卡/关蜂窝/飞行模式共享 Wi-Fi 与 Wi-Fi+VPN 叠加、状态栏保留 Wi-Fi 图标），连入设备零配置，控制中心支持轻点开关与长按 5 模式菜单切换，事件驱动超省电，兼容 iOS 15–17 Rootless/RootHide。
 Maintainer: zhuifeng
 Author: zhuifeng
 Section: Networking
@@ -291,17 +291,17 @@ Icon: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/icon.png
 SileoDepiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.json
 Depiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.html
 Architecture: iphoneos-arm64
-Version: 1.2.4
-Installed-Size: 948
-Filename: debs/com.sharehotspotvpn.tweak_1.2.4_iphoneos-arm64.deb
-Size: 94554
-MD5sum: 3290370bfb68acb302fa33d25187bb9a
-SHA1: 1c538ef93968920fc69a67968b90ed559f65d4ca
-SHA256: 2aaea07b84607eb7bd85731b92626df8a4678735a6e73dbf5b55f84290d304bb
+Version: 1.3.1
+Installed-Size: 1116
+Filename: debs/com.sharehotspotvpn.tweak_1.3.1_iphoneos-arm64.deb
+Size: 99088
+MD5sum: 04be99cdb41ebdc137a0931d20401f84
+SHA1: b7c860ce94814e293f9b8fe386fa91f04a83a475
+SHA256: 43ea7b9ae57832b2c365c7f97d9644353e5156b4fcfa9391e9b8386be0e05b84
 
 Package: com.sharehotspotvpn.tweak
 Name: VPN热点共享-RootHide
-Description: 一键通过个人热点共享本机 Wi-Fi、移动数据或 Shadowrocket/VPN（支持 Wi-Fi+VPN 叠加与状态栏保留 Wi-Fi 图标），连入设备零配置，控制中心支持轻点开关与长按 5 模式菜单切换，事件驱动超省电，兼容 iOS 15–17 Rootless/RootHide。
+Description: 一键通过个人热点共享本机 Wi-Fi、移动数据或 Shadowrocket/VPN（支持无卡/关蜂窝/飞行模式共享 Wi-Fi 与 Wi-Fi+VPN 叠加、状态栏保留 Wi-Fi 图标），连入设备零配置，控制中心支持轻点开关与长按 5 模式菜单切换，事件驱动超省电，兼容 iOS 15–17 Rootless/RootHide。
 Maintainer: zhuifeng
 Author: zhuifeng
 Section: Networking
@@ -310,13 +310,13 @@ Icon: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/icon.png
 SileoDepiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.json
 Depiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.html
 Architecture: iphoneos-arm64e
-Version: 1.2.4
-Installed-Size: 484
-Filename: debs/com.sharehotspotvpn.tweak_1.2.4_iphoneos-arm64e.deb
-Size: 77438
-MD5sum: 80c0b1d45e82ab72c2539cc09a0dc762
-SHA1: 38552e3afc10e1e0613443723be42dba72e0b2ac
-SHA256: 9e086650ba5841b8f6d055e82fe960dab1bde42484aa9fa7c87bb57b86dac5d3
+Version: 1.3.1
+Installed-Size: 556
+Filename: debs/com.sharehotspotvpn.tweak_1.3.1_iphoneos-arm64e.deb
+Size: 81048
+MD5sum: 9b60724ec7a026428a8954f518847a48
+SHA1: 30a4678ce2f0af0ea87d6ae9851d534809bd92c3
+SHA256: ae6895644aa46d54b575a8b8f7c44f78ca9eb844a9f665eeb08a82c06829e7bf
 
 Package: com.zhuifeng.allowringinmute
 Name: 静音响铃
