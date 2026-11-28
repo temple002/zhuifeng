@@ -291,13 +291,13 @@ Icon: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/icon.png
 SileoDepiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.json
 Depiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.html
 Architecture: iphoneos-arm64
-Version: 1.3.1
-Installed-Size: 1116
-Filename: debs/com.sharehotspotvpn.tweak_1.3.1_iphoneos-arm64.deb
-Size: 99088
-MD5sum: 04be99cdb41ebdc137a0931d20401f84
-SHA1: b7c860ce94814e293f9b8fe386fa91f04a83a475
-SHA256: 43ea7b9ae57832b2c365c7f97d9644353e5156b4fcfa9391e9b8386be0e05b84
+Version: 1.4.1
+Installed-Size: 1148
+Filename: debs/com.sharehotspotvpn.tweak_1.4.1_iphoneos-arm64.deb
+Size: 112172
+MD5sum: 8d84895f18d29661166e904c8b9636e5
+SHA1: 9e4912a50a9dc983d58527b20a0bdba72b05e32e
+SHA256: 42f8ce1a0444d8d47ddc41d894a4289fb1d0ad9dfce3acf54413cb26493a07a4
 
 Package: com.sharehotspotvpn.tweak
 Name: VPN热点共享-RootHide
@@ -310,13 +310,13 @@ Icon: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn/icon.png
 SileoDepiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.json
 Depiction: https://temple002.github.io/zhuifeng/depictions/sharehotspotvpn.html
 Architecture: iphoneos-arm64e
-Version: 1.3.1
-Installed-Size: 556
-Filename: debs/com.sharehotspotvpn.tweak_1.3.1_iphoneos-arm64e.deb
-Size: 81048
-MD5sum: 9b60724ec7a026428a8954f518847a48
-SHA1: 30a4678ce2f0af0ea87d6ae9851d534809bd92c3
-SHA256: ae6895644aa46d54b575a8b8f7c44f78ca9eb844a9f665eeb08a82c06829e7bf
+Version: 1.4.1
+Installed-Size: 572
+Filename: debs/com.sharehotspotvpn.tweak_1.4.1_iphoneos-arm64e.deb
+Size: 89784
+MD5sum: 05666b15570d8ca6150997ef69a3fc06
+SHA1: 0a3b4a6665357a78c7e4a6b1016313bf77bcb39e
+SHA256: 324b380c9583cb8fc90afaff83c6fb1e87d21be44c9a5bb0634649c1b873cf7c
 
 Package: com.zhuifeng.allowringinmute
 Name: 静音响铃
