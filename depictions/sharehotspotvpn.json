@@ -47,7 +47,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "版本",
-          "text": "1.4.1"
+          "text": "1.4.2"
         },
         {
           "class": "DepictionTableTextView",
@@ -70,6 +70,18 @@
       "class": "DepictionStackView",
       "tabname": "更新记录",
       "views": [
+        {
+          "class": "DepictionTableTextView",
+          "title": "v1.4.2",
+          "text": "2026-11-28"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 修复「自动」和「数据 + VPN」模式下，Wi-Fi 突然断开后热点没能顺利转到蜂窝数据的问题，切换时不再断流"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
         {
           "class": "DepictionTableTextView",
           "title": "v1.4.1",
