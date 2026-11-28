@@ -76,7 +76,7 @@
   <ul>
     <li><b>无卡 / 飞行模式可用</b>：不插 SIM 卡、关闭蜂窝数据或开启飞行模式，依然能共享本机 Wi-Fi 与 Wi-Fi + VPN，个人热点不再依赖蜂窝网络。</li>
     <li><b>便捷开启</b>：选定某一模式后，若该模式需要的 Wi-Fi、蜂窝数据或 VPN 还没开，插件会自动帮你打开缺失的那一项，打不开时弹窗说明原因。设置里可关闭。</li>
-    <li><b>关闭时处理</b>：可选在关闭插件时，按当前模式反向关掉对应的 Wi-Fi、蜂窝数据或 VPN；本来就没开的不会重复操作。默认关闭。</li>
+    <li><b>关闭时处理</b>：可选在关闭插件时，把 Wi-Fi、蜂窝数据、VPN 精确还原成开启共享之前的样子；本来是什么状态就回到什么状态，不会多关或少关。默认关闭。</li>
     <li><b>五种共享模式</b>：自动、仅共享 Wi-Fi、仅共享数据、Wi-Fi + VPN、数据 + VPN，按当前网络自动切换或强制指定，热点设备全程零配置。</li>
     <li><b>Wi-Fi 也能共享</b>：不只是共享 VPN，还能把本机当前连接的 Wi-Fi 直接分给热点设备；共享 Wi-Fi 时状态栏保留 Wi-Fi 图标。</li>
     <li><b>全协议透明转发</b>：支持 TCP 透明转发、DNS 劫持转发（完美适配 Fake-IP 分流规则），以及可选 UDP 转发（支持语音、游戏与 QUIC；若节点不支持 UDP，可一键关闭自动回落至 TCP）。</li>
@@ -122,6 +122,8 @@
 
   <h3>📝 更新记录</h3>
   <div class="chg">
+    <div class="ver"><b>v1.4.3</b> · 2026-11-28</div>
+    <ul><li>「关闭时处理」改为精确还原：关闭共享后，Wi-Fi、蜂窝数据、VPN 回到开启共享之前的原始状态，不再出现多关或少关</li></ul>
     <div class="ver"><b>v1.4.2</b> · 2026-11-28</div>
     <ul><li>修复「自动」和「数据 + VPN」模式下，Wi-Fi 突然断开后热点没能顺利转到蜂窝数据的问题，切换时不再断流</li></ul>
     <div class="ver"><b>v1.4.1</b> · 2026-11-28</div>
@@ -172,13 +174,13 @@
 
   <div class="info">
     <div class="row"><span class="k">作者</span><span class="v">zhuifeng / 追风</span></div>
-    <div class="row"><span class="k">版本</span><span class="v">1.4.2</span></div>
+    <div class="row"><span class="k">版本</span><span class="v">1.4.3</span></div>
     <div class="row"><span class="k">兼容</span><span class="v">iOS 15–17 · Rootless / RootHide</span></div>
     <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64 · iphoneos-arm64e</span></div>
     <div class="row"><span class="k">依赖</span><span class="v">preferenceloader · CCSupport</span></div>
   </div>
 
-  <div class="footer">VPN热点共享 1.4.2 · 追风源 · 2026</div>
+  <div class="footer">VPN热点共享 1.4.3 · 追风源 · 2026</div>
 </div>
 </body>
 </html>
